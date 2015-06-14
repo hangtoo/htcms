@@ -1,0 +1,14 @@
+<SCRIPT type=text/javascript>
+function checkWordCount(textA,str){
+	document.getElementById(str).innerText="内容总字符数："+textA.value.length;
+	if (textA.value.length>1000){
+		alert("内容不得超过1000个字符");
+	}
+}
+</script> 
+只能填入数字：<br>
+<input onKeyUp="value=value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"/>
+
+<br>
+<textarea name="content" id="content"onpropertychange="checkWordCount(this,'total')"></textarea>
+<p align="left" id="total">内容总字符数：0</p>

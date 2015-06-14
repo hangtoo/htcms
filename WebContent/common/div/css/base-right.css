@@ -1,0 +1,29 @@
+/***内容整体布局***/
+
+#contentfloat {
+	padding: 0px;
+}
+
+#contenttitle{
+}
+#content {
+	float:left;
+	clear:right;
+	margin-left:19px;margin-top: -1px;
+	border-bottom:1px solid #F0F0F0;
+	padding: 0px;
+	height: 100%;
+	margin-top:169px;
+	width:985px;
+}
+
+/**bottom菜单**/
+.foot{
+	margin-left:39px;
+	width:900px;
+	clear:both;
+	color:#3274d0;
+	font-size:90%;
+	text-align:left;
+}
+

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd">
+
+	<bean id="generatorPlaceholderConfig"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location">
+			<value>classpath:system-dev.properties</value>
+		</property>
+	</bean>
+
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName">
+			<value>${jdbcDriver}</value>
+		</property>
+		<property name="url">
+			<value>${jdbcUrl}</value>
+		</property>
+		<property name="username">
+			<value>${jdbcUser}</value>
+		</property>
+		<property name="password">
+			<value>${jdbcPassword}</value>
+		</property>
+		<property name="maxActive">
+			<value>${jdbcMaxActive}</value>
+		</property>
+		<property name="maxIdle">
+			<value>${jdbcMaxIdle}</value>
+		</property>
+		<property name="maxWait">
+			<value>${jdbcMaxWait}</value>
+		</property>
+	</bean>
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref local="dataSource" />
+		</property>
+		<property name="mappingDirectoryLocations">
+			<list>
+				<value>classpath:</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">${jdbcDialect}</prop>
+				<prop key="hibernate.show_sql">${jdbcShowSql}</prop>
+				<prop key="hibernate.use_outer_join">${jdbcUseOuterJoin}</prop>
+				<prop key="hibernate.transaction.factory_class">${transactionManagerFactory}</prop>
+				<prop key="hibernate.query.substitutions">${jdbcQuerySubstitutions}</prop>
+			</props><!--comment-->
+		</property>
+	</bean>
+
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+
+	<bean id="txProxyTemplate" abstract="true"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager">
+			<ref bean="transactionManager" />
+		</property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="create*">PROPAGATION_REQUIRED</prop>
+				<prop key="update*">PROPAGATION_REQUIRED</prop>
+				<prop key="remove*">PROPAGATION_REQUIRED</prop>
+				<prop key="save*">PROPAGATION_REQUIRED</prop>
+				<prop key="modify*">PROPAGATION_REQUIRED</prop>
+				<prop key="delete*">PROPAGATION_REQUIRED</prop>
+				<prop key="*">PROPAGATION_REQUIRED,readOnly</prop>
+			</props>
+		</property>
+	</bean>
+
+</beans>

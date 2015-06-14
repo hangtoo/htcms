@@ -1,0 +1,10 @@
+<testng-results>
+  <reporter-output>
+  </reporter-output>
+  <suite name="struts2">
+    <groups>
+    </groups>
+    <test name="common.component.applet.GlobeApplet">
+    </test>
+  </suite>
+</testng-results>

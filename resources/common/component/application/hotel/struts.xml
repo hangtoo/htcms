@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <package name="hotel" namespace="/hotel" extends="struts-default">
+        
+        <!-- 用户管理模块 -->
+        <!-- 
+        admin_*:
+        search newOne edit=>
+        searchadmin.jsp newOneadmin.jsp editadmin.jsp(return input)操作界面
+        
+        admindb_*:
+        remove save update =>search(return success)数据库操作
+        
+        -->
+         
+        <!-- 
+		admindb_save.action=>AdminAction.save()=>success=>admin_search.action        
+        admindb_delete.action=>AdminAction.delete()=>success=>admin_search.action
+        admindb_update.action=>AdminAction.update()=>success=>admin_search.action
+        return success数据库操作
+        
+		admin_search.action=>AdminAction.search()=>success=>searchadmin.jsp
+        admin_newOne.action=>AdminAction.newOne()=>success=>newOneadmin.jsp
+        admin_edit.action=>AdminAction.edit()=>success=>editadmin.jsp
+        return success操作界面
+        
+        --> 
+
+		<!-- 酒店管理模块 -->
+        
+        <action name="hotel_*" method="{1}" class="hotelAction">
+			<result name="success">/common/component/application/hotel/{1}hotel.jsp</result>
+        </action>
+        
+        <action name="hoteldb_*" method="{1}" class="hotelAction">
+			<result name="success"  type="chain">
+				<param name="actionName">hotel_search</param>
+				<param name="namespace">/hotel</param>
+			</result>
+        </action>
+        
+        <!-- 默认模块 必须放在该配置文件的结尾 -->
+
+        <!-- Add actions here -->
+    </package>
+</struts>

@@ -1,0 +1,13 @@
+/LICENSE.txt
+/NOTICE.txt
+/common/
+/example/
+/example.xml
+/hibernate.cfg.xml
+/log4j.properties
+/spring/
+/struts.properties
+/struts.xml
+/system-dev.properties
+/template/
+/test/

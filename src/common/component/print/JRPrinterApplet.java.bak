@@ -1,0 +1,88 @@
+package common.component.print;
+
+import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.net.URL;
+
+import javax.swing.JApplet;
+import javax.swing.JOptionPane;
+
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.engine.JasperPrintManager;
+import net.sf.jasperreports.engine.util.JRLoader;
+
+/**
+ * @author Teodor Danciu (teodord@users.sourceforge.net)
+ * @version $Id: PrinterApplet.java 1229 2006-04-19 13:27:35 +0300 (Wed, 19 Apr
+ *          2006) teodord $
+ */
+public class JRPrinterApplet extends JApplet {
+	private URL url = null;
+	private JasperPrint jasperPrint = null;
+
+	/** Creates new form AppletViewer */
+	public JRPrinterApplet() {
+
+	}
+
+	/**
+	 * 
+	 */
+	public void init() {
+		String strUrl = getParameter("REPORT_URL");
+		
+		if (strUrl != null) {
+			try {
+				url = new URL(getCodeBase(), strUrl);
+			} catch (Exception e) {
+				StringWriter swriter = new StringWriter();
+				PrintWriter pwriter = new PrintWriter(swriter);
+				e.printStackTrace(pwriter);
+				JOptionPane.showMessageDialog(this, swriter.toString());
+			}
+		} else {
+			JOptionPane.showMessageDialog(this, "Source URL not specified");
+		}
+	}
+
+	public void start() {
+		if (url != null) {
+			if (jasperPrint == null) {
+				try {
+					jasperPrint = (JasperPrint) JRLoader.loadObject(url);
+				} catch (Exception e) {
+					StringWriter swriter = new StringWriter();
+					PrintWriter pwriter = new PrintWriter(swriter);
+					e.printStackTrace(pwriter);
+					JOptionPane.showMessageDialog(this, swriter.toString());
+				}
+			}
+
+			if (jasperPrint != null) {
+				final JasperPrint print = jasperPrint;
+
+				Thread thread = new Thread(new Runnable() {
+					public void run() {
+						try {
+							JasperPrintManager.printReport(print, true);
+						} catch (Exception e) {
+							StringWriter swriter = new StringWriter();
+							PrintWriter pwriter = new PrintWriter(swriter);
+							e.printStackTrace(pwriter);
+							JOptionPane.showMessageDialog(null, swriter
+									.toString());
+						}
+					}
+				});
+
+				thread.start();
+			} else {
+				JOptionPane.showMessageDialog(this, "Empty report.");
+			}
+		} else {
+			JOptionPane.showMessageDialog(this, "Source URL not specified");
+		}
+
+	}
+
+}

@@ -1,0 +1,47 @@
+	body{background-color:#ffffff;padding:0px auto;margin:0px auto;}
+	
+	A{
+	text-decoration: none;
+	}
+	
+	/*站点头部*/
+	#head{background-color:#ffffff;margin-right:39px;clear:both;font-size:90%;overflow:hidden;min-width:300px;}
+	
+	/*站点logo*/
+	#head #sitemark{text-align:left;position:absolute;margin:0px 0px 0 39px;width:250px;}
+	#head #sitemark .my{color:red;font-size:100%;font-weight:bold;}
+	#head #sitemark .f{color:#3274D0;font-size:300%;}
+	#head #sitemark .a{color:yellow;font-size:500%;}
+	#head #sitemark .v{color:red;font-size:700%;}
+	
+	/*站点说明*/
+	#head #info{
+		position:absolute;color:#565Bb0;font-size:90%;width:350px;height:60px;
+		margin-left:300px;margin-top:59px;
+	}
+	
+	/*用户信息*/
+	#head #userinfo{
+		position:absolute;width:300px;text-align:right;color:#3274D0;
+		margin-top:29px;margin-left: 730px;
+	}
+	
+	/*菜单*/
+	#head #navbar {
+		position:absolute;
+		MARGIN-TOP: 99px; BACKGROUND: url(../images/bg.gif) repeat-x 0px -115px; HEIGHT: 26px;
+		margin-left:39px!important;
+		width:985px;
+	}
+	#head #navbar LI {
+		FLOAT: left; LIST-STYLE-TYPE: none;
+	}
+	#head #navbar LI A {
+		BORDER-RIGHT: #ffffff 1px solid; DISPLAY: block; FONT-WEIGHT: bold; WIDTH: 96px; COLOR: #ffffff; PADDING-TOP: 7px; HEIGHT: 19px; TEXT-ALIGN: center
+	}
+	#head #navbar .current A  {
+		BACKGROUND: url(../images/bg.gif) repeat-x 0px -141px;
+		margin-left:-39px!important;margin-left:0px;
+	}
+	
+	

@@ -1,0 +1,16 @@
+#Mon Oct 26 22:30:52 CST 2009
+eclipse.preferences.version=1
+encoding//WebContent/common/component/application/user/login.jsp=UTF-8
+encoding//WebContent/common/component/application/user/register.jsp=UTF-8
+encoding//WebContent/common/component/extreme/css/extremecomponents.css=UTF-8
+encoding//WebContent/common/component/html/dragdiv/dragMoveDiv.js=UTF-8
+encoding//WebContent/common/component/html/dragdiv/example01.html=UTF-8
+encoding//WebContent/common/component/html/dragdiv/gapplet.jsp=UTF-8
+encoding//WebContent/common/component/permission/navigate/navigatetree.jsp=UTF-8
+encoding//WebContent/common/component/print/template.jsp=UTF-8
+encoding//WebContent/common/contenttitle.jsp=UTF-8
+encoding//resources/example/package_zh.properties=UTF-8
+encoding//resources/struts.properties=UTF-8
+encoding/<project>=UTF-8
+encoding/build.properties=UTF-8
+instance/org.eclipse.core.net/org.eclipse.core.net.hasMigrated=true

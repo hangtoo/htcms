@@ -1,0 +1,2441 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>Unit Test Results</title>
+<style type="text/css">
+      body {
+        font:normal 68% verdana,arial,helvetica;
+        color:#000000;
+      }
+      table tr td, table tr th {
+          font-size: 68%;
+      }
+      table.details tr th{
+        font-weight: bold;
+        text-align:left;
+        background:#a6caf0;
+      }
+      table.details tr td{
+        background:#eeeee0;
+      }
+
+      p {
+        line-height:1.5em;
+        margin-top:0.5em; margin-bottom:1.0em;
+      }
+      h1 {
+        margin: 0px 0px 5px; font: 165% verdana,arial,helvetica
+      }
+      h2 {
+        margin-top: 1em; margin-bottom: 0.5em; font: bold 125% verdana,arial,helvetica
+      }
+      h3 {
+        margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica
+      }
+      h4 {
+        margin-bottom: 0.5em; font: bold 100% verdana,arial,helvetica
+      }
+      h5 {
+        margin-bottom: 0.5em; font: bold 100% verdana,arial,helvetica
+      }
+      h6 {
+        margin-bottom: 0.5em; font: bold 100% verdana,arial,helvetica
+      }
+      .Error {
+        font-weight:bold; color:red;
+      }
+      .Failure {
+        font-weight:bold; color:purple;
+      }
+      .Properties {
+        text-align:right;
+      }
+      </style>
+<script type="text/javascript" language="JavaScript">
+        var TestCases = new Array();
+        var cur;
+        
+    cur = TestCases['test.common.component.cms.action.AttributeActionTest'] = new Array();
+    
+        cur['ant.core.lib'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant.jar';
+    
+        cur['ant.file'] = 'E:\\strutsworkspace\\struts2\\buildjunit.xml';
+    
+        cur['ant.file.struts2'] = 'E:\\strutsworkspace\\struts2\\buildjunit.xml';
+    
+        cur['ant.home'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842';
+    
+        cur['ant.java.version'] = '1.6';
+    
+        cur['ant.library.dir'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib';
+    
+        cur['ant.project.name'] = 'struts2';
+    
+        cur['ant.version'] = 'Apache Ant version 1.7.0 compiled on December 13 2006';
+    
+        cur['app.name'] = 'struts2';
+    
+        cur['app.version'] = '1.0';
+    
+        cur['awt.toolkit'] = 'sun.awt.windows.WToolkit';
+    
+        cur['basedir'] = 'E:\\strutsworkspace\\struts2';
+    
+        cur['build.dir'] = 'build';
+    
+        cur['classes.dir'] = 'WebContent/WEB-INF/classes';
+    
+        cur['eclipse.pdebuild.home'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/./';
+    
+        cur['eclipse.pdebuild.scripts'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/scripts/';
+    
+        cur['eclipse.pdebuild.templates'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/templates/';
+    
+        cur['file.encoding'] = 'GBK';
+    
+        cur['file.encoding.pkg'] = 'sun.io';
+    
+        cur['file.separator'] = '\\';
+    
+        cur['generated.dir'] = 'generated';
+    
+        cur['hibernatedoclet'] = 'xdoclet.modules.hibernate.HibernateDocletTask';
+    
+        cur['java.awt.graphicsenv'] = 'sun.awt.Win32GraphicsEnvironment';
+    
+        cur['java.awt.printerjob'] = 'sun.awt.windows.WPrinterJob';
+    
+        cur['java.class.path'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-antlr.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-bcel.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-bsf.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-log4j.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-oro.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-regexp.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-resolver.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-commons-logging.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-commons-net.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jai.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-javamail.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jdepend.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jmf.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jsch.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-junit.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-launcher.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-netrexx.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-nodeps.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-starteam.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-stylebook.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-swing.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-trax.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-weblogic.jar;E:\\wtp\\configuration\\org.eclipse.osgi\\bundles\\20\\1\\.cp\\lib\\remoteAnt.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\lib\\tools.jar;E:\\wtp\\plugins\\org.eclipse.swt.win32.win32.x86_3.3.0.v3346.jar;E:\\wtp\\plugins\\com.spket.swt_1.6.6.jar';
+    
+        cur['java.class.version'] = '50.0';
+    
+        cur['java.endorsed.dirs'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\endorsed';
+    
+        cur['java.ext.dirs'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\ext;C:\\WINDOWS\\Sun\\Java\\lib\\ext';
+    
+        cur['java.home'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre';
+    
+        cur['java.io.tmpdir'] = 'C:\\DOCUME~1\\ADMINI~1\\LOCALS~1\\Temp\\';
+    
+        cur['java.library.path'] = 'E:\\wtp;.;C:\\WINDOWS\\Sun\\Java\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;D:\\Program Files\\Java\\jre1.6.0_03\\bin\\client;D:\\Program Files\\Java\\jre1.6.0_03\\bin;D:\\Program Files\\Borland\\Delphi7\\Bin;D:\\Program Files\\Borland\\Delphi7\\Projects\\Bpl\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\Program Files\\Microsoft SQL Server\\80\\Tools\\BINN;D:\\Program Files\\Java\\jdk1.6.0_03\\bin;E:\\MySQL5.0\\bin;d:\\Program Files\\IDM Computer Solutions\\UltraEdit-32;C:\\Program Files\\CVSNT\\;E:\\wtp\\configuration\\org.eclipse.osgi\\bundles\\312\\1\\.cp';
+    
+        cur['java.runtime.name'] = 'Java(TM) SE Runtime Environment';
+    
+        cur['java.runtime.version'] = '1.6.0_03-b05';
+    
+        cur['java.specification.name'] = 'Java Platform API Specification';
+    
+        cur['java.specification.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.specification.version'] = '1.6';
+    
+        cur['java.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vendor.url'] = 'http://java.sun.com/';
+    
+        cur['java.vendor.url.bug'] = 'http://java.sun.com/cgi-bin/bugreport.cgi';
+    
+        cur['java.version'] = '1.6.0_03';
+    
+        cur['java.vm.info'] = 'mixed mode, sharing';
+    
+        cur['java.vm.name'] = 'Java HotSpot(TM) Client VM';
+    
+        cur['java.vm.specification.name'] = 'Java Virtual Machine Specification';
+    
+        cur['java.vm.specification.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vm.specification.version'] = '1.0';
+    
+        cur['java.vm.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vm.version'] = '1.6.0_03-b05';
+    
+        cur['jdbcDialect'] = 'org.hibernate.dialect.MySQLDialect';
+    
+        cur['jdbcDriver'] = 'com.mysql.jdbc.Driver';
+    
+        cur['jdbcPassword'] = 'sa';
+    
+        cur['jdbcShowSql'] = 'true';
+    
+        cur['jdbcUrl'] = 'jdbc:mysql://localhost:3306/heh';
+    
+        cur['jdbcUseOuterJoin'] = 'true';
+    
+        cur['jdbcUsePool'] = 'true';
+    
+        cur['jdbcUser'] = 'root';
+    
+        cur['junit.dir'] = 'E:/wtp/plugins/org.junit4_4.3.1';
+    
+        cur['lib.dir'] = 'WebContent/WEB-INF/lib';
+    
+        cur['line.separator'] = ' ';
+    
+        cur['os.arch'] = 'x86';
+    
+        cur['os.name'] = 'Windows XP';
+    
+        cur['os.version'] = '5.1';
+    
+        cur['path.separator'] = ';';
+    
+        cur['poolPreparedStatements'] = 'true';
+    
+        cur['schemaexport'] = 'org.hibernate.tool.hbm2ddl.SchemaExportTask';
+    
+        cur['src.dir'] = 'src';
+    
+        cur['sun.arch.data.model'] = '32';
+    
+        cur['sun.boot.class.path'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\resources.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\rt.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\sunrsasign.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\jsse.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\jce.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\charsets.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\classes';
+    
+        cur['sun.boot.library.path'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\bin';
+    
+        cur['sun.cpu.endian'] = 'little';
+    
+        cur['sun.cpu.isalist'] = 'pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86';
+    
+        cur['sun.desktop'] = 'windows';
+    
+        cur['sun.io.unicode.encoding'] = 'UnicodeLittle';
+    
+        cur['sun.java.launcher'] = 'SUN_STANDARD';
+    
+        cur['sun.jnu.encoding'] = 'GBK';
+    
+        cur['sun.management.compiler'] = 'HotSpot Client Compiler';
+    
+        cur['sun.os.patch.level'] = 'Service Pack 2';
+    
+        cur['tomcat.dir'] = 'E:/Tomcat5.5';
+    
+        cur['transactionManagerFactory'] = 'org.hibernate.transaction.JDBCTransactionFactory';
+    
+        cur['user.country'] = 'CN';
+    
+        cur['user.dir'] = 'E:\\strutsworkspace\\struts2';
+    
+        cur['user.home'] = 'C:\\Documents and Settings\\Administrator';
+    
+        cur['user.language'] = 'zh';
+    
+        cur['user.name'] = 'Administrator';
+    
+        cur['user.timezone'] = '';
+    
+        cur['user.variant'] = '';
+    
+        cur['version'] = '1.0';
+    
+        cur['xdlib.dir'] = 'WebContent/WEB-INF/xdlib';
+    
+    cur = TestCases['test.common.component.cms.action.CatalogueActionTest'] = new Array();
+    
+        cur['ant.core.lib'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant.jar';
+    
+        cur['ant.file'] = 'E:\\strutsworkspace\\struts2\\buildjunit.xml';
+    
+        cur['ant.file.struts2'] = 'E:\\strutsworkspace\\struts2\\buildjunit.xml';
+    
+        cur['ant.home'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842';
+    
+        cur['ant.java.version'] = '1.6';
+    
+        cur['ant.library.dir'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib';
+    
+        cur['ant.project.name'] = 'struts2';
+    
+        cur['ant.version'] = 'Apache Ant version 1.7.0 compiled on December 13 2006';
+    
+        cur['app.name'] = 'struts2';
+    
+        cur['app.version'] = '1.0';
+    
+        cur['awt.toolkit'] = 'sun.awt.windows.WToolkit';
+    
+        cur['basedir'] = 'E:\\strutsworkspace\\struts2';
+    
+        cur['build.dir'] = 'build';
+    
+        cur['classes.dir'] = 'WebContent/WEB-INF/classes';
+    
+        cur['eclipse.pdebuild.home'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/./';
+    
+        cur['eclipse.pdebuild.scripts'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/scripts/';
+    
+        cur['eclipse.pdebuild.templates'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/templates/';
+    
+        cur['file.encoding'] = 'GBK';
+    
+        cur['file.encoding.pkg'] = 'sun.io';
+    
+        cur['file.separator'] = '\\';
+    
+        cur['generated.dir'] = 'generated';
+    
+        cur['hibernatedoclet'] = 'xdoclet.modules.hibernate.HibernateDocletTask';
+    
+        cur['java.awt.graphicsenv'] = 'sun.awt.Win32GraphicsEnvironment';
+    
+        cur['java.awt.printerjob'] = 'sun.awt.windows.WPrinterJob';
+    
+        cur['java.class.path'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-antlr.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-bcel.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-bsf.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-log4j.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-oro.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-regexp.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-resolver.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-commons-logging.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-commons-net.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jai.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-javamail.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jdepend.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jmf.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jsch.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-junit.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-launcher.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-netrexx.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-nodeps.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-starteam.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-stylebook.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-swing.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-trax.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-weblogic.jar;E:\\wtp\\configuration\\org.eclipse.osgi\\bundles\\20\\1\\.cp\\lib\\remoteAnt.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\lib\\tools.jar;E:\\wtp\\plugins\\org.eclipse.swt.win32.win32.x86_3.3.0.v3346.jar;E:\\wtp\\plugins\\com.spket.swt_1.6.6.jar';
+    
+        cur['java.class.version'] = '50.0';
+    
+        cur['java.endorsed.dirs'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\endorsed';
+    
+        cur['java.ext.dirs'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\ext;C:\\WINDOWS\\Sun\\Java\\lib\\ext';
+    
+        cur['java.home'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre';
+    
+        cur['java.io.tmpdir'] = 'C:\\DOCUME~1\\ADMINI~1\\LOCALS~1\\Temp\\';
+    
+        cur['java.library.path'] = 'E:\\wtp;.;C:\\WINDOWS\\Sun\\Java\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;D:\\Program Files\\Java\\jre1.6.0_03\\bin\\client;D:\\Program Files\\Java\\jre1.6.0_03\\bin;D:\\Program Files\\Borland\\Delphi7\\Bin;D:\\Program Files\\Borland\\Delphi7\\Projects\\Bpl\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\Program Files\\Microsoft SQL Server\\80\\Tools\\BINN;D:\\Program Files\\Java\\jdk1.6.0_03\\bin;E:\\MySQL5.0\\bin;d:\\Program Files\\IDM Computer Solutions\\UltraEdit-32;C:\\Program Files\\CVSNT\\;E:\\wtp\\configuration\\org.eclipse.osgi\\bundles\\312\\1\\.cp';
+    
+        cur['java.runtime.name'] = 'Java(TM) SE Runtime Environment';
+    
+        cur['java.runtime.version'] = '1.6.0_03-b05';
+    
+        cur['java.specification.name'] = 'Java Platform API Specification';
+    
+        cur['java.specification.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.specification.version'] = '1.6';
+    
+        cur['java.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vendor.url'] = 'http://java.sun.com/';
+    
+        cur['java.vendor.url.bug'] = 'http://java.sun.com/cgi-bin/bugreport.cgi';
+    
+        cur['java.version'] = '1.6.0_03';
+    
+        cur['java.vm.info'] = 'mixed mode, sharing';
+    
+        cur['java.vm.name'] = 'Java HotSpot(TM) Client VM';
+    
+        cur['java.vm.specification.name'] = 'Java Virtual Machine Specification';
+    
+        cur['java.vm.specification.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vm.specification.version'] = '1.0';
+    
+        cur['java.vm.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vm.version'] = '1.6.0_03-b05';
+    
+        cur['jdbcDialect'] = 'org.hibernate.dialect.MySQLDialect';
+    
+        cur['jdbcDriver'] = 'com.mysql.jdbc.Driver';
+    
+        cur['jdbcPassword'] = 'sa';
+    
+        cur['jdbcShowSql'] = 'true';
+    
+        cur['jdbcUrl'] = 'jdbc:mysql://localhost:3306/heh';
+    
+        cur['jdbcUseOuterJoin'] = 'true';
+    
+        cur['jdbcUsePool'] = 'true';
+    
+        cur['jdbcUser'] = 'root';
+    
+        cur['junit.dir'] = 'E:/wtp/plugins/org.junit4_4.3.1';
+    
+        cur['lib.dir'] = 'WebContent/WEB-INF/lib';
+    
+        cur['line.separator'] = ' ';
+    
+        cur['os.arch'] = 'x86';
+    
+        cur['os.name'] = 'Windows XP';
+    
+        cur['os.version'] = '5.1';
+    
+        cur['path.separator'] = ';';
+    
+        cur['poolPreparedStatements'] = 'true';
+    
+        cur['schemaexport'] = 'org.hibernate.tool.hbm2ddl.SchemaExportTask';
+    
+        cur['src.dir'] = 'src';
+    
+        cur['sun.arch.data.model'] = '32';
+    
+        cur['sun.boot.class.path'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\resources.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\rt.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\sunrsasign.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\jsse.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\jce.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\charsets.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\classes';
+    
+        cur['sun.boot.library.path'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\bin';
+    
+        cur['sun.cpu.endian'] = 'little';
+    
+        cur['sun.cpu.isalist'] = 'pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86';
+    
+        cur['sun.desktop'] = 'windows';
+    
+        cur['sun.io.unicode.encoding'] = 'UnicodeLittle';
+    
+        cur['sun.java.launcher'] = 'SUN_STANDARD';
+    
+        cur['sun.jnu.encoding'] = 'GBK';
+    
+        cur['sun.management.compiler'] = 'HotSpot Client Compiler';
+    
+        cur['sun.os.patch.level'] = 'Service Pack 2';
+    
+        cur['tomcat.dir'] = 'E:/Tomcat5.5';
+    
+        cur['transactionManagerFactory'] = 'org.hibernate.transaction.JDBCTransactionFactory';
+    
+        cur['user.country'] = 'CN';
+    
+        cur['user.dir'] = 'E:\\strutsworkspace\\struts2';
+    
+        cur['user.home'] = 'C:\\Documents and Settings\\Administrator';
+    
+        cur['user.language'] = 'zh';
+    
+        cur['user.name'] = 'Administrator';
+    
+        cur['user.timezone'] = '';
+    
+        cur['user.variant'] = '';
+    
+        cur['version'] = '1.0';
+    
+        cur['xdlib.dir'] = 'WebContent/WEB-INF/xdlib';
+    
+    cur = TestCases['test.common.component.cms.action.ContentActionTest'] = new Array();
+    
+        cur['ant.core.lib'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant.jar';
+    
+        cur['ant.file'] = 'E:\\strutsworkspace\\struts2\\buildjunit.xml';
+    
+        cur['ant.file.struts2'] = 'E:\\strutsworkspace\\struts2\\buildjunit.xml';
+    
+        cur['ant.home'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842';
+    
+        cur['ant.java.version'] = '1.6';
+    
+        cur['ant.library.dir'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib';
+    
+        cur['ant.project.name'] = 'struts2';
+    
+        cur['ant.version'] = 'Apache Ant version 1.7.0 compiled on December 13 2006';
+    
+        cur['app.name'] = 'struts2';
+    
+        cur['app.version'] = '1.0';
+    
+        cur['awt.toolkit'] = 'sun.awt.windows.WToolkit';
+    
+        cur['basedir'] = 'E:\\strutsworkspace\\struts2';
+    
+        cur['build.dir'] = 'build';
+    
+        cur['classes.dir'] = 'WebContent/WEB-INF/classes';
+    
+        cur['eclipse.pdebuild.home'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/./';
+    
+        cur['eclipse.pdebuild.scripts'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/scripts/';
+    
+        cur['eclipse.pdebuild.templates'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/templates/';
+    
+        cur['file.encoding'] = 'GBK';
+    
+        cur['file.encoding.pkg'] = 'sun.io';
+    
+        cur['file.separator'] = '\\';
+    
+        cur['generated.dir'] = 'generated';
+    
+        cur['hibernatedoclet'] = 'xdoclet.modules.hibernate.HibernateDocletTask';
+    
+        cur['java.awt.graphicsenv'] = 'sun.awt.Win32GraphicsEnvironment';
+    
+        cur['java.awt.printerjob'] = 'sun.awt.windows.WPrinterJob';
+    
+        cur['java.class.path'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-antlr.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-bcel.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-bsf.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-log4j.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-oro.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-regexp.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-resolver.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-commons-logging.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-commons-net.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jai.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-javamail.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jdepend.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jmf.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jsch.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-junit.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-launcher.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-netrexx.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-nodeps.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-starteam.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-stylebook.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-swing.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-trax.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-weblogic.jar;E:\\wtp\\configuration\\org.eclipse.osgi\\bundles\\20\\1\\.cp\\lib\\remoteAnt.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\lib\\tools.jar;E:\\wtp\\plugins\\org.eclipse.swt.win32.win32.x86_3.3.0.v3346.jar;E:\\wtp\\plugins\\com.spket.swt_1.6.6.jar';
+    
+        cur['java.class.version'] = '50.0';
+    
+        cur['java.endorsed.dirs'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\endorsed';
+    
+        cur['java.ext.dirs'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\ext;C:\\WINDOWS\\Sun\\Java\\lib\\ext';
+    
+        cur['java.home'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre';
+    
+        cur['java.io.tmpdir'] = 'C:\\DOCUME~1\\ADMINI~1\\LOCALS~1\\Temp\\';
+    
+        cur['java.library.path'] = 'E:\\wtp;.;C:\\WINDOWS\\Sun\\Java\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;D:\\Program Files\\Java\\jre1.6.0_03\\bin\\client;D:\\Program Files\\Java\\jre1.6.0_03\\bin;D:\\Program Files\\Borland\\Delphi7\\Bin;D:\\Program Files\\Borland\\Delphi7\\Projects\\Bpl\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\Program Files\\Microsoft SQL Server\\80\\Tools\\BINN;D:\\Program Files\\Java\\jdk1.6.0_03\\bin;E:\\MySQL5.0\\bin;d:\\Program Files\\IDM Computer Solutions\\UltraEdit-32;C:\\Program Files\\CVSNT\\;E:\\wtp\\configuration\\org.eclipse.osgi\\bundles\\312\\1\\.cp';
+    
+        cur['java.runtime.name'] = 'Java(TM) SE Runtime Environment';
+    
+        cur['java.runtime.version'] = '1.6.0_03-b05';
+    
+        cur['java.specification.name'] = 'Java Platform API Specification';
+    
+        cur['java.specification.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.specification.version'] = '1.6';
+    
+        cur['java.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vendor.url'] = 'http://java.sun.com/';
+    
+        cur['java.vendor.url.bug'] = 'http://java.sun.com/cgi-bin/bugreport.cgi';
+    
+        cur['java.version'] = '1.6.0_03';
+    
+        cur['java.vm.info'] = 'mixed mode, sharing';
+    
+        cur['java.vm.name'] = 'Java HotSpot(TM) Client VM';
+    
+        cur['java.vm.specification.name'] = 'Java Virtual Machine Specification';
+    
+        cur['java.vm.specification.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vm.specification.version'] = '1.0';
+    
+        cur['java.vm.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vm.version'] = '1.6.0_03-b05';
+    
+        cur['jdbcDialect'] = 'org.hibernate.dialect.MySQLDialect';
+    
+        cur['jdbcDriver'] = 'com.mysql.jdbc.Driver';
+    
+        cur['jdbcPassword'] = 'sa';
+    
+        cur['jdbcShowSql'] = 'true';
+    
+        cur['jdbcUrl'] = 'jdbc:mysql://localhost:3306/heh';
+    
+        cur['jdbcUseOuterJoin'] = 'true';
+    
+        cur['jdbcUsePool'] = 'true';
+    
+        cur['jdbcUser'] = 'root';
+    
+        cur['junit.dir'] = 'E:/wtp/plugins/org.junit4_4.3.1';
+    
+        cur['lib.dir'] = 'WebContent/WEB-INF/lib';
+    
+        cur['line.separator'] = ' ';
+    
+        cur['os.arch'] = 'x86';
+    
+        cur['os.name'] = 'Windows XP';
+    
+        cur['os.version'] = '5.1';
+    
+        cur['path.separator'] = ';';
+    
+        cur['poolPreparedStatements'] = 'true';
+    
+        cur['schemaexport'] = 'org.hibernate.tool.hbm2ddl.SchemaExportTask';
+    
+        cur['src.dir'] = 'src';
+    
+        cur['sun.arch.data.model'] = '32';
+    
+        cur['sun.boot.class.path'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\resources.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\rt.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\sunrsasign.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\jsse.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\jce.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\charsets.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\classes';
+    
+        cur['sun.boot.library.path'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\bin';
+    
+        cur['sun.cpu.endian'] = 'little';
+    
+        cur['sun.cpu.isalist'] = 'pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86';
+    
+        cur['sun.desktop'] = 'windows';
+    
+        cur['sun.io.unicode.encoding'] = 'UnicodeLittle';
+    
+        cur['sun.java.launcher'] = 'SUN_STANDARD';
+    
+        cur['sun.jnu.encoding'] = 'GBK';
+    
+        cur['sun.management.compiler'] = 'HotSpot Client Compiler';
+    
+        cur['sun.os.patch.level'] = 'Service Pack 2';
+    
+        cur['tomcat.dir'] = 'E:/Tomcat5.5';
+    
+        cur['transactionManagerFactory'] = 'org.hibernate.transaction.JDBCTransactionFactory';
+    
+        cur['user.country'] = 'CN';
+    
+        cur['user.dir'] = 'E:\\strutsworkspace\\struts2';
+    
+        cur['user.home'] = 'C:\\Documents and Settings\\Administrator';
+    
+        cur['user.language'] = 'zh';
+    
+        cur['user.name'] = 'Administrator';
+    
+        cur['user.timezone'] = '';
+    
+        cur['user.variant'] = '';
+    
+        cur['version'] = '1.0';
+    
+        cur['xdlib.dir'] = 'WebContent/WEB-INF/xdlib';
+    
+    cur = TestCases['test.common.component.cms.action.ExcelActionTest'] = new Array();
+    
+        cur['ant.core.lib'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant.jar';
+    
+        cur['ant.file'] = 'E:\\strutsworkspace\\struts2\\buildjunit.xml';
+    
+        cur['ant.file.struts2'] = 'E:\\strutsworkspace\\struts2\\buildjunit.xml';
+    
+        cur['ant.home'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842';
+    
+        cur['ant.java.version'] = '1.6';
+    
+        cur['ant.library.dir'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib';
+    
+        cur['ant.project.name'] = 'struts2';
+    
+        cur['ant.version'] = 'Apache Ant version 1.7.0 compiled on December 13 2006';
+    
+        cur['app.name'] = 'struts2';
+    
+        cur['app.version'] = '1.0';
+    
+        cur['awt.toolkit'] = 'sun.awt.windows.WToolkit';
+    
+        cur['basedir'] = 'E:\\strutsworkspace\\struts2';
+    
+        cur['build.dir'] = 'build';
+    
+        cur['classes.dir'] = 'WebContent/WEB-INF/classes';
+    
+        cur['eclipse.pdebuild.home'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/./';
+    
+        cur['eclipse.pdebuild.scripts'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/scripts/';
+    
+        cur['eclipse.pdebuild.templates'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/templates/';
+    
+        cur['file.encoding'] = 'GBK';
+    
+        cur['file.encoding.pkg'] = 'sun.io';
+    
+        cur['file.separator'] = '\\';
+    
+        cur['generated.dir'] = 'generated';
+    
+        cur['hibernatedoclet'] = 'xdoclet.modules.hibernate.HibernateDocletTask';
+    
+        cur['java.awt.graphicsenv'] = 'sun.awt.Win32GraphicsEnvironment';
+    
+        cur['java.awt.printerjob'] = 'sun.awt.windows.WPrinterJob';
+    
+        cur['java.class.path'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-antlr.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-bcel.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-bsf.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-log4j.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-oro.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-regexp.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-resolver.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-commons-logging.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-commons-net.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jai.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-javamail.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jdepend.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jmf.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jsch.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-junit.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-launcher.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-netrexx.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-nodeps.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-starteam.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-stylebook.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-swing.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-trax.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-weblogic.jar;E:\\wtp\\configuration\\org.eclipse.osgi\\bundles\\20\\1\\.cp\\lib\\remoteAnt.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\lib\\tools.jar;E:\\wtp\\plugins\\org.eclipse.swt.win32.win32.x86_3.3.0.v3346.jar;E:\\wtp\\plugins\\com.spket.swt_1.6.6.jar';
+    
+        cur['java.class.version'] = '50.0';
+    
+        cur['java.endorsed.dirs'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\endorsed';
+    
+        cur['java.ext.dirs'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\ext;C:\\WINDOWS\\Sun\\Java\\lib\\ext';
+    
+        cur['java.home'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre';
+    
+        cur['java.io.tmpdir'] = 'C:\\DOCUME~1\\ADMINI~1\\LOCALS~1\\Temp\\';
+    
+        cur['java.library.path'] = 'E:\\wtp;.;C:\\WINDOWS\\Sun\\Java\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;D:\\Program Files\\Java\\jre1.6.0_03\\bin\\client;D:\\Program Files\\Java\\jre1.6.0_03\\bin;D:\\Program Files\\Borland\\Delphi7\\Bin;D:\\Program Files\\Borland\\Delphi7\\Projects\\Bpl\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\Program Files\\Microsoft SQL Server\\80\\Tools\\BINN;D:\\Program Files\\Java\\jdk1.6.0_03\\bin;E:\\MySQL5.0\\bin;d:\\Program Files\\IDM Computer Solutions\\UltraEdit-32;C:\\Program Files\\CVSNT\\;E:\\wtp\\configuration\\org.eclipse.osgi\\bundles\\312\\1\\.cp';
+    
+        cur['java.runtime.name'] = 'Java(TM) SE Runtime Environment';
+    
+        cur['java.runtime.version'] = '1.6.0_03-b05';
+    
+        cur['java.specification.name'] = 'Java Platform API Specification';
+    
+        cur['java.specification.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.specification.version'] = '1.6';
+    
+        cur['java.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vendor.url'] = 'http://java.sun.com/';
+    
+        cur['java.vendor.url.bug'] = 'http://java.sun.com/cgi-bin/bugreport.cgi';
+    
+        cur['java.version'] = '1.6.0_03';
+    
+        cur['java.vm.info'] = 'mixed mode, sharing';
+    
+        cur['java.vm.name'] = 'Java HotSpot(TM) Client VM';
+    
+        cur['java.vm.specification.name'] = 'Java Virtual Machine Specification';
+    
+        cur['java.vm.specification.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vm.specification.version'] = '1.0';
+    
+        cur['java.vm.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vm.version'] = '1.6.0_03-b05';
+    
+        cur['jdbcDialect'] = 'org.hibernate.dialect.MySQLDialect';
+    
+        cur['jdbcDriver'] = 'com.mysql.jdbc.Driver';
+    
+        cur['jdbcPassword'] = 'sa';
+    
+        cur['jdbcShowSql'] = 'true';
+    
+        cur['jdbcUrl'] = 'jdbc:mysql://localhost:3306/heh';
+    
+        cur['jdbcUseOuterJoin'] = 'true';
+    
+        cur['jdbcUsePool'] = 'true';
+    
+        cur['jdbcUser'] = 'root';
+    
+        cur['junit.dir'] = 'E:/wtp/plugins/org.junit4_4.3.1';
+    
+        cur['lib.dir'] = 'WebContent/WEB-INF/lib';
+    
+        cur['line.separator'] = ' ';
+    
+        cur['os.arch'] = 'x86';
+    
+        cur['os.name'] = 'Windows XP';
+    
+        cur['os.version'] = '5.1';
+    
+        cur['path.separator'] = ';';
+    
+        cur['poolPreparedStatements'] = 'true';
+    
+        cur['schemaexport'] = 'org.hibernate.tool.hbm2ddl.SchemaExportTask';
+    
+        cur['src.dir'] = 'src';
+    
+        cur['sun.arch.data.model'] = '32';
+    
+        cur['sun.boot.class.path'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\resources.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\rt.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\sunrsasign.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\jsse.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\jce.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\charsets.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\classes';
+    
+        cur['sun.boot.library.path'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\bin';
+    
+        cur['sun.cpu.endian'] = 'little';
+    
+        cur['sun.cpu.isalist'] = 'pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86';
+    
+        cur['sun.desktop'] = 'windows';
+    
+        cur['sun.io.unicode.encoding'] = 'UnicodeLittle';
+    
+        cur['sun.java.launcher'] = 'SUN_STANDARD';
+    
+        cur['sun.jnu.encoding'] = 'GBK';
+    
+        cur['sun.management.compiler'] = 'HotSpot Client Compiler';
+    
+        cur['sun.os.patch.level'] = 'Service Pack 2';
+    
+        cur['tomcat.dir'] = 'E:/Tomcat5.5';
+    
+        cur['transactionManagerFactory'] = 'org.hibernate.transaction.JDBCTransactionFactory';
+    
+        cur['user.country'] = 'CN';
+    
+        cur['user.dir'] = 'E:\\strutsworkspace\\struts2';
+    
+        cur['user.home'] = 'C:\\Documents and Settings\\Administrator';
+    
+        cur['user.language'] = 'zh';
+    
+        cur['user.name'] = 'Administrator';
+    
+        cur['user.timezone'] = '';
+    
+        cur['user.variant'] = '';
+    
+        cur['version'] = '1.0';
+    
+        cur['xdlib.dir'] = 'WebContent/WEB-INF/xdlib';
+    
+    cur = TestCases['test.common.component.cms.action.HttpActionTest'] = new Array();
+    
+        cur['ant.core.lib'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant.jar';
+    
+        cur['ant.file'] = 'E:\\strutsworkspace\\struts2\\buildjunit.xml';
+    
+        cur['ant.file.struts2'] = 'E:\\strutsworkspace\\struts2\\buildjunit.xml';
+    
+        cur['ant.home'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842';
+    
+        cur['ant.java.version'] = '1.6';
+    
+        cur['ant.library.dir'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib';
+    
+        cur['ant.project.name'] = 'struts2';
+    
+        cur['ant.version'] = 'Apache Ant version 1.7.0 compiled on December 13 2006';
+    
+        cur['app.name'] = 'struts2';
+    
+        cur['app.version'] = '1.0';
+    
+        cur['awt.toolkit'] = 'sun.awt.windows.WToolkit';
+    
+        cur['basedir'] = 'E:\\strutsworkspace\\struts2';
+    
+        cur['build.dir'] = 'build';
+    
+        cur['classes.dir'] = 'WebContent/WEB-INF/classes';
+    
+        cur['eclipse.pdebuild.home'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/./';
+    
+        cur['eclipse.pdebuild.scripts'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/scripts/';
+    
+        cur['eclipse.pdebuild.templates'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/templates/';
+    
+        cur['file.encoding'] = 'GBK';
+    
+        cur['file.encoding.pkg'] = 'sun.io';
+    
+        cur['file.separator'] = '\\';
+    
+        cur['generated.dir'] = 'generated';
+    
+        cur['hibernatedoclet'] = 'xdoclet.modules.hibernate.HibernateDocletTask';
+    
+        cur['java.awt.graphicsenv'] = 'sun.awt.Win32GraphicsEnvironment';
+    
+        cur['java.awt.printerjob'] = 'sun.awt.windows.WPrinterJob';
+    
+        cur['java.class.path'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-antlr.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-bcel.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-bsf.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-log4j.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-oro.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-regexp.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-resolver.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-commons-logging.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-commons-net.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jai.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-javamail.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jdepend.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jmf.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jsch.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-junit.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-launcher.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-netrexx.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-nodeps.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-starteam.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-stylebook.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-swing.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-trax.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-weblogic.jar;E:\\wtp\\configuration\\org.eclipse.osgi\\bundles\\20\\1\\.cp\\lib\\remoteAnt.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\lib\\tools.jar;E:\\wtp\\plugins\\org.eclipse.swt.win32.win32.x86_3.3.0.v3346.jar;E:\\wtp\\plugins\\com.spket.swt_1.6.6.jar';
+    
+        cur['java.class.version'] = '50.0';
+    
+        cur['java.endorsed.dirs'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\endorsed';
+    
+        cur['java.ext.dirs'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\ext;C:\\WINDOWS\\Sun\\Java\\lib\\ext';
+    
+        cur['java.home'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre';
+    
+        cur['java.io.tmpdir'] = 'C:\\DOCUME~1\\ADMINI~1\\LOCALS~1\\Temp\\';
+    
+        cur['java.library.path'] = 'E:\\wtp;.;C:\\WINDOWS\\Sun\\Java\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;D:\\Program Files\\Java\\jre1.6.0_03\\bin\\client;D:\\Program Files\\Java\\jre1.6.0_03\\bin;D:\\Program Files\\Borland\\Delphi7\\Bin;D:\\Program Files\\Borland\\Delphi7\\Projects\\Bpl\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\Program Files\\Microsoft SQL Server\\80\\Tools\\BINN;D:\\Program Files\\Java\\jdk1.6.0_03\\bin;E:\\MySQL5.0\\bin;d:\\Program Files\\IDM Computer Solutions\\UltraEdit-32;C:\\Program Files\\CVSNT\\;E:\\wtp\\configuration\\org.eclipse.osgi\\bundles\\312\\1\\.cp';
+    
+        cur['java.runtime.name'] = 'Java(TM) SE Runtime Environment';
+    
+        cur['java.runtime.version'] = '1.6.0_03-b05';
+    
+        cur['java.specification.name'] = 'Java Platform API Specification';
+    
+        cur['java.specification.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.specification.version'] = '1.6';
+    
+        cur['java.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vendor.url'] = 'http://java.sun.com/';
+    
+        cur['java.vendor.url.bug'] = 'http://java.sun.com/cgi-bin/bugreport.cgi';
+    
+        cur['java.version'] = '1.6.0_03';
+    
+        cur['java.vm.info'] = 'mixed mode, sharing';
+    
+        cur['java.vm.name'] = 'Java HotSpot(TM) Client VM';
+    
+        cur['java.vm.specification.name'] = 'Java Virtual Machine Specification';
+    
+        cur['java.vm.specification.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vm.specification.version'] = '1.0';
+    
+        cur['java.vm.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vm.version'] = '1.6.0_03-b05';
+    
+        cur['jdbcDialect'] = 'org.hibernate.dialect.MySQLDialect';
+    
+        cur['jdbcDriver'] = 'com.mysql.jdbc.Driver';
+    
+        cur['jdbcPassword'] = 'sa';
+    
+        cur['jdbcShowSql'] = 'true';
+    
+        cur['jdbcUrl'] = 'jdbc:mysql://localhost:3306/heh';
+    
+        cur['jdbcUseOuterJoin'] = 'true';
+    
+        cur['jdbcUsePool'] = 'true';
+    
+        cur['jdbcUser'] = 'root';
+    
+        cur['junit.dir'] = 'E:/wtp/plugins/org.junit4_4.3.1';
+    
+        cur['lib.dir'] = 'WebContent/WEB-INF/lib';
+    
+        cur['line.separator'] = ' ';
+    
+        cur['os.arch'] = 'x86';
+    
+        cur['os.name'] = 'Windows XP';
+    
+        cur['os.version'] = '5.1';
+    
+        cur['path.separator'] = ';';
+    
+        cur['poolPreparedStatements'] = 'true';
+    
+        cur['schemaexport'] = 'org.hibernate.tool.hbm2ddl.SchemaExportTask';
+    
+        cur['src.dir'] = 'src';
+    
+        cur['sun.arch.data.model'] = '32';
+    
+        cur['sun.boot.class.path'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\resources.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\rt.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\sunrsasign.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\jsse.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\jce.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\charsets.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\classes';
+    
+        cur['sun.boot.library.path'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\bin';
+    
+        cur['sun.cpu.endian'] = 'little';
+    
+        cur['sun.cpu.isalist'] = 'pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86';
+    
+        cur['sun.desktop'] = 'windows';
+    
+        cur['sun.io.unicode.encoding'] = 'UnicodeLittle';
+    
+        cur['sun.java.launcher'] = 'SUN_STANDARD';
+    
+        cur['sun.jnu.encoding'] = 'GBK';
+    
+        cur['sun.management.compiler'] = 'HotSpot Client Compiler';
+    
+        cur['sun.os.patch.level'] = 'Service Pack 2';
+    
+        cur['tomcat.dir'] = 'E:/Tomcat5.5';
+    
+        cur['transactionManagerFactory'] = 'org.hibernate.transaction.JDBCTransactionFactory';
+    
+        cur['user.country'] = 'CN';
+    
+        cur['user.dir'] = 'E:\\strutsworkspace\\struts2';
+    
+        cur['user.home'] = 'C:\\Documents and Settings\\Administrator';
+    
+        cur['user.language'] = 'zh';
+    
+        cur['user.name'] = 'Administrator';
+    
+        cur['user.timezone'] = '';
+    
+        cur['user.variant'] = '';
+    
+        cur['version'] = '1.0';
+    
+        cur['xdlib.dir'] = 'WebContent/WEB-INF/xdlib';
+    
+    cur = TestCases['test.common.component.permission.action.AdminActionTest'] = new Array();
+    
+        cur['ant.core.lib'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant.jar';
+    
+        cur['ant.file'] = 'E:\\strutsworkspace\\struts2\\buildjunit.xml';
+    
+        cur['ant.file.struts2'] = 'E:\\strutsworkspace\\struts2\\buildjunit.xml';
+    
+        cur['ant.home'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842';
+    
+        cur['ant.java.version'] = '1.6';
+    
+        cur['ant.library.dir'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib';
+    
+        cur['ant.project.name'] = 'struts2';
+    
+        cur['ant.version'] = 'Apache Ant version 1.7.0 compiled on December 13 2006';
+    
+        cur['app.name'] = 'struts2';
+    
+        cur['app.version'] = '1.0';
+    
+        cur['awt.toolkit'] = 'sun.awt.windows.WToolkit';
+    
+        cur['basedir'] = 'E:\\strutsworkspace\\struts2';
+    
+        cur['build.dir'] = 'build';
+    
+        cur['classes.dir'] = 'WebContent/WEB-INF/classes';
+    
+        cur['eclipse.pdebuild.home'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/./';
+    
+        cur['eclipse.pdebuild.scripts'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/scripts/';
+    
+        cur['eclipse.pdebuild.templates'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/templates/';
+    
+        cur['file.encoding'] = 'GBK';
+    
+        cur['file.encoding.pkg'] = 'sun.io';
+    
+        cur['file.separator'] = '\\';
+    
+        cur['generated.dir'] = 'generated';
+    
+        cur['hibernatedoclet'] = 'xdoclet.modules.hibernate.HibernateDocletTask';
+    
+        cur['java.awt.graphicsenv'] = 'sun.awt.Win32GraphicsEnvironment';
+    
+        cur['java.awt.printerjob'] = 'sun.awt.windows.WPrinterJob';
+    
+        cur['java.class.path'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-antlr.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-bcel.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-bsf.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-log4j.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-oro.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-regexp.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-resolver.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-commons-logging.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-commons-net.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jai.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-javamail.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jdepend.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jmf.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jsch.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-junit.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-launcher.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-netrexx.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-nodeps.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-starteam.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-stylebook.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-swing.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-trax.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-weblogic.jar;E:\\wtp\\configuration\\org.eclipse.osgi\\bundles\\20\\1\\.cp\\lib\\remoteAnt.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\lib\\tools.jar;E:\\wtp\\plugins\\org.eclipse.swt.win32.win32.x86_3.3.0.v3346.jar;E:\\wtp\\plugins\\com.spket.swt_1.6.6.jar';
+    
+        cur['java.class.version'] = '50.0';
+    
+        cur['java.endorsed.dirs'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\endorsed';
+    
+        cur['java.ext.dirs'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\ext;C:\\WINDOWS\\Sun\\Java\\lib\\ext';
+    
+        cur['java.home'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre';
+    
+        cur['java.io.tmpdir'] = 'C:\\DOCUME~1\\ADMINI~1\\LOCALS~1\\Temp\\';
+    
+        cur['java.library.path'] = 'E:\\wtp;.;C:\\WINDOWS\\Sun\\Java\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;D:\\Program Files\\Java\\jre1.6.0_03\\bin\\client;D:\\Program Files\\Java\\jre1.6.0_03\\bin;D:\\Program Files\\Borland\\Delphi7\\Bin;D:\\Program Files\\Borland\\Delphi7\\Projects\\Bpl\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\Program Files\\Microsoft SQL Server\\80\\Tools\\BINN;D:\\Program Files\\Java\\jdk1.6.0_03\\bin;E:\\MySQL5.0\\bin;d:\\Program Files\\IDM Computer Solutions\\UltraEdit-32;C:\\Program Files\\CVSNT\\;E:\\wtp\\configuration\\org.eclipse.osgi\\bundles\\312\\1\\.cp';
+    
+        cur['java.runtime.name'] = 'Java(TM) SE Runtime Environment';
+    
+        cur['java.runtime.version'] = '1.6.0_03-b05';
+    
+        cur['java.specification.name'] = 'Java Platform API Specification';
+    
+        cur['java.specification.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.specification.version'] = '1.6';
+    
+        cur['java.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vendor.url'] = 'http://java.sun.com/';
+    
+        cur['java.vendor.url.bug'] = 'http://java.sun.com/cgi-bin/bugreport.cgi';
+    
+        cur['java.version'] = '1.6.0_03';
+    
+        cur['java.vm.info'] = 'mixed mode, sharing';
+    
+        cur['java.vm.name'] = 'Java HotSpot(TM) Client VM';
+    
+        cur['java.vm.specification.name'] = 'Java Virtual Machine Specification';
+    
+        cur['java.vm.specification.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vm.specification.version'] = '1.0';
+    
+        cur['java.vm.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vm.version'] = '1.6.0_03-b05';
+    
+        cur['jdbcDialect'] = 'org.hibernate.dialect.MySQLDialect';
+    
+        cur['jdbcDriver'] = 'com.mysql.jdbc.Driver';
+    
+        cur['jdbcPassword'] = 'sa';
+    
+        cur['jdbcShowSql'] = 'true';
+    
+        cur['jdbcUrl'] = 'jdbc:mysql://localhost:3306/heh';
+    
+        cur['jdbcUseOuterJoin'] = 'true';
+    
+        cur['jdbcUsePool'] = 'true';
+    
+        cur['jdbcUser'] = 'root';
+    
+        cur['junit.dir'] = 'E:/wtp/plugins/org.junit4_4.3.1';
+    
+        cur['lib.dir'] = 'WebContent/WEB-INF/lib';
+    
+        cur['line.separator'] = ' ';
+    
+        cur['os.arch'] = 'x86';
+    
+        cur['os.name'] = 'Windows XP';
+    
+        cur['os.version'] = '5.1';
+    
+        cur['path.separator'] = ';';
+    
+        cur['poolPreparedStatements'] = 'true';
+    
+        cur['schemaexport'] = 'org.hibernate.tool.hbm2ddl.SchemaExportTask';
+    
+        cur['src.dir'] = 'src';
+    
+        cur['sun.arch.data.model'] = '32';
+    
+        cur['sun.boot.class.path'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\resources.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\rt.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\sunrsasign.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\jsse.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\jce.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\charsets.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\classes';
+    
+        cur['sun.boot.library.path'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\bin';
+    
+        cur['sun.cpu.endian'] = 'little';
+    
+        cur['sun.cpu.isalist'] = 'pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86';
+    
+        cur['sun.desktop'] = 'windows';
+    
+        cur['sun.io.unicode.encoding'] = 'UnicodeLittle';
+    
+        cur['sun.java.launcher'] = 'SUN_STANDARD';
+    
+        cur['sun.jnu.encoding'] = 'GBK';
+    
+        cur['sun.management.compiler'] = 'HotSpot Client Compiler';
+    
+        cur['sun.os.patch.level'] = 'Service Pack 2';
+    
+        cur['tomcat.dir'] = 'E:/Tomcat5.5';
+    
+        cur['transactionManagerFactory'] = 'org.hibernate.transaction.JDBCTransactionFactory';
+    
+        cur['user.country'] = 'CN';
+    
+        cur['user.dir'] = 'E:\\strutsworkspace\\struts2';
+    
+        cur['user.home'] = 'C:\\Documents and Settings\\Administrator';
+    
+        cur['user.language'] = 'zh';
+    
+        cur['user.name'] = 'Administrator';
+    
+        cur['user.timezone'] = '';
+    
+        cur['user.variant'] = '';
+    
+        cur['version'] = '1.0';
+    
+        cur['xdlib.dir'] = 'WebContent/WEB-INF/xdlib';
+    
+    cur = TestCases['test.common.component.permission.action.HelloWorldTest'] = new Array();
+    
+        cur['ant.core.lib'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant.jar';
+    
+        cur['ant.file'] = 'E:\\strutsworkspace\\struts2\\buildjunit.xml';
+    
+        cur['ant.file.struts2'] = 'E:\\strutsworkspace\\struts2\\buildjunit.xml';
+    
+        cur['ant.home'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842';
+    
+        cur['ant.java.version'] = '1.6';
+    
+        cur['ant.library.dir'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib';
+    
+        cur['ant.project.name'] = 'struts2';
+    
+        cur['ant.version'] = 'Apache Ant version 1.7.0 compiled on December 13 2006';
+    
+        cur['app.name'] = 'struts2';
+    
+        cur['app.version'] = '1.0';
+    
+        cur['awt.toolkit'] = 'sun.awt.windows.WToolkit';
+    
+        cur['basedir'] = 'E:\\strutsworkspace\\struts2';
+    
+        cur['build.dir'] = 'build';
+    
+        cur['classes.dir'] = 'WebContent/WEB-INF/classes';
+    
+        cur['eclipse.pdebuild.home'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/./';
+    
+        cur['eclipse.pdebuild.scripts'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/scripts/';
+    
+        cur['eclipse.pdebuild.templates'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/templates/';
+    
+        cur['file.encoding'] = 'GBK';
+    
+        cur['file.encoding.pkg'] = 'sun.io';
+    
+        cur['file.separator'] = '\\';
+    
+        cur['generated.dir'] = 'generated';
+    
+        cur['hibernatedoclet'] = 'xdoclet.modules.hibernate.HibernateDocletTask';
+    
+        cur['java.awt.graphicsenv'] = 'sun.awt.Win32GraphicsEnvironment';
+    
+        cur['java.awt.printerjob'] = 'sun.awt.windows.WPrinterJob';
+    
+        cur['java.class.path'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-antlr.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-bcel.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-bsf.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-log4j.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-oro.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-regexp.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-resolver.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-commons-logging.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-commons-net.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jai.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-javamail.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jdepend.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jmf.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jsch.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-junit.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-launcher.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-netrexx.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-nodeps.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-starteam.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-stylebook.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-swing.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-trax.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-weblogic.jar;E:\\wtp\\configuration\\org.eclipse.osgi\\bundles\\20\\1\\.cp\\lib\\remoteAnt.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\lib\\tools.jar;E:\\wtp\\plugins\\org.eclipse.swt.win32.win32.x86_3.3.0.v3346.jar;E:\\wtp\\plugins\\com.spket.swt_1.6.6.jar';
+    
+        cur['java.class.version'] = '50.0';
+    
+        cur['java.endorsed.dirs'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\endorsed';
+    
+        cur['java.ext.dirs'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\ext;C:\\WINDOWS\\Sun\\Java\\lib\\ext';
+    
+        cur['java.home'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre';
+    
+        cur['java.io.tmpdir'] = 'C:\\DOCUME~1\\ADMINI~1\\LOCALS~1\\Temp\\';
+    
+        cur['java.library.path'] = 'E:\\wtp;.;C:\\WINDOWS\\Sun\\Java\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;D:\\Program Files\\Java\\jre1.6.0_03\\bin\\client;D:\\Program Files\\Java\\jre1.6.0_03\\bin;D:\\Program Files\\Borland\\Delphi7\\Bin;D:\\Program Files\\Borland\\Delphi7\\Projects\\Bpl\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\Program Files\\Microsoft SQL Server\\80\\Tools\\BINN;D:\\Program Files\\Java\\jdk1.6.0_03\\bin;E:\\MySQL5.0\\bin;d:\\Program Files\\IDM Computer Solutions\\UltraEdit-32;C:\\Program Files\\CVSNT\\;E:\\wtp\\configuration\\org.eclipse.osgi\\bundles\\312\\1\\.cp';
+    
+        cur['java.runtime.name'] = 'Java(TM) SE Runtime Environment';
+    
+        cur['java.runtime.version'] = '1.6.0_03-b05';
+    
+        cur['java.specification.name'] = 'Java Platform API Specification';
+    
+        cur['java.specification.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.specification.version'] = '1.6';
+    
+        cur['java.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vendor.url'] = 'http://java.sun.com/';
+    
+        cur['java.vendor.url.bug'] = 'http://java.sun.com/cgi-bin/bugreport.cgi';
+    
+        cur['java.version'] = '1.6.0_03';
+    
+        cur['java.vm.info'] = 'mixed mode, sharing';
+    
+        cur['java.vm.name'] = 'Java HotSpot(TM) Client VM';
+    
+        cur['java.vm.specification.name'] = 'Java Virtual Machine Specification';
+    
+        cur['java.vm.specification.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vm.specification.version'] = '1.0';
+    
+        cur['java.vm.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vm.version'] = '1.6.0_03-b05';
+    
+        cur['jdbcDialect'] = 'org.hibernate.dialect.MySQLDialect';
+    
+        cur['jdbcDriver'] = 'com.mysql.jdbc.Driver';
+    
+        cur['jdbcPassword'] = 'sa';
+    
+        cur['jdbcShowSql'] = 'true';
+    
+        cur['jdbcUrl'] = 'jdbc:mysql://localhost:3306/heh';
+    
+        cur['jdbcUseOuterJoin'] = 'true';
+    
+        cur['jdbcUsePool'] = 'true';
+    
+        cur['jdbcUser'] = 'root';
+    
+        cur['junit.dir'] = 'E:/wtp/plugins/org.junit4_4.3.1';
+    
+        cur['lib.dir'] = 'WebContent/WEB-INF/lib';
+    
+        cur['line.separator'] = ' ';
+    
+        cur['os.arch'] = 'x86';
+    
+        cur['os.name'] = 'Windows XP';
+    
+        cur['os.version'] = '5.1';
+    
+        cur['path.separator'] = ';';
+    
+        cur['poolPreparedStatements'] = 'true';
+    
+        cur['schemaexport'] = 'org.hibernate.tool.hbm2ddl.SchemaExportTask';
+    
+        cur['src.dir'] = 'src';
+    
+        cur['sun.arch.data.model'] = '32';
+    
+        cur['sun.boot.class.path'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\resources.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\rt.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\sunrsasign.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\jsse.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\jce.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\charsets.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\classes';
+    
+        cur['sun.boot.library.path'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\bin';
+    
+        cur['sun.cpu.endian'] = 'little';
+    
+        cur['sun.cpu.isalist'] = 'pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86';
+    
+        cur['sun.desktop'] = 'windows';
+    
+        cur['sun.io.unicode.encoding'] = 'UnicodeLittle';
+    
+        cur['sun.java.launcher'] = 'SUN_STANDARD';
+    
+        cur['sun.jnu.encoding'] = 'GBK';
+    
+        cur['sun.management.compiler'] = 'HotSpot Client Compiler';
+    
+        cur['sun.os.patch.level'] = 'Service Pack 2';
+    
+        cur['tomcat.dir'] = 'E:/Tomcat5.5';
+    
+        cur['transactionManagerFactory'] = 'org.hibernate.transaction.JDBCTransactionFactory';
+    
+        cur['user.country'] = 'CN';
+    
+        cur['user.dir'] = 'E:\\strutsworkspace\\struts2';
+    
+        cur['user.home'] = 'C:\\Documents and Settings\\Administrator';
+    
+        cur['user.language'] = 'zh';
+    
+        cur['user.name'] = 'Administrator';
+    
+        cur['user.timezone'] = '';
+    
+        cur['user.variant'] = '';
+    
+        cur['version'] = '1.0';
+    
+        cur['xdlib.dir'] = 'WebContent/WEB-INF/xdlib';
+    
+    cur = TestCases['test.common.component.permission.action.LoginActionTest'] = new Array();
+    
+        cur['ant.core.lib'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant.jar';
+    
+        cur['ant.file'] = 'E:\\strutsworkspace\\struts2\\buildjunit.xml';
+    
+        cur['ant.file.struts2'] = 'E:\\strutsworkspace\\struts2\\buildjunit.xml';
+    
+        cur['ant.home'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842';
+    
+        cur['ant.java.version'] = '1.6';
+    
+        cur['ant.library.dir'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib';
+    
+        cur['ant.project.name'] = 'struts2';
+    
+        cur['ant.version'] = 'Apache Ant version 1.7.0 compiled on December 13 2006';
+    
+        cur['app.name'] = 'struts2';
+    
+        cur['app.version'] = '1.0';
+    
+        cur['awt.toolkit'] = 'sun.awt.windows.WToolkit';
+    
+        cur['basedir'] = 'E:\\strutsworkspace\\struts2';
+    
+        cur['build.dir'] = 'build';
+    
+        cur['classes.dir'] = 'WebContent/WEB-INF/classes';
+    
+        cur['eclipse.pdebuild.home'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/./';
+    
+        cur['eclipse.pdebuild.scripts'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/scripts/';
+    
+        cur['eclipse.pdebuild.templates'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/templates/';
+    
+        cur['file.encoding'] = 'GBK';
+    
+        cur['file.encoding.pkg'] = 'sun.io';
+    
+        cur['file.separator'] = '\\';
+    
+        cur['generated.dir'] = 'generated';
+    
+        cur['hibernatedoclet'] = 'xdoclet.modules.hibernate.HibernateDocletTask';
+    
+        cur['java.awt.graphicsenv'] = 'sun.awt.Win32GraphicsEnvironment';
+    
+        cur['java.awt.printerjob'] = 'sun.awt.windows.WPrinterJob';
+    
+        cur['java.class.path'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-antlr.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-bcel.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-bsf.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-log4j.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-oro.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-regexp.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-resolver.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-commons-logging.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-commons-net.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jai.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-javamail.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jdepend.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jmf.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jsch.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-junit.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-launcher.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-netrexx.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-nodeps.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-starteam.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-stylebook.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-swing.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-trax.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-weblogic.jar;E:\\wtp\\configuration\\org.eclipse.osgi\\bundles\\20\\1\\.cp\\lib\\remoteAnt.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\lib\\tools.jar;E:\\wtp\\plugins\\org.eclipse.swt.win32.win32.x86_3.3.0.v3346.jar;E:\\wtp\\plugins\\com.spket.swt_1.6.6.jar';
+    
+        cur['java.class.version'] = '50.0';
+    
+        cur['java.endorsed.dirs'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\endorsed';
+    
+        cur['java.ext.dirs'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\ext;C:\\WINDOWS\\Sun\\Java\\lib\\ext';
+    
+        cur['java.home'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre';
+    
+        cur['java.io.tmpdir'] = 'C:\\DOCUME~1\\ADMINI~1\\LOCALS~1\\Temp\\';
+    
+        cur['java.library.path'] = 'E:\\wtp;.;C:\\WINDOWS\\Sun\\Java\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;D:\\Program Files\\Java\\jre1.6.0_03\\bin\\client;D:\\Program Files\\Java\\jre1.6.0_03\\bin;D:\\Program Files\\Borland\\Delphi7\\Bin;D:\\Program Files\\Borland\\Delphi7\\Projects\\Bpl\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\Program Files\\Microsoft SQL Server\\80\\Tools\\BINN;D:\\Program Files\\Java\\jdk1.6.0_03\\bin;E:\\MySQL5.0\\bin;d:\\Program Files\\IDM Computer Solutions\\UltraEdit-32;C:\\Program Files\\CVSNT\\;E:\\wtp\\configuration\\org.eclipse.osgi\\bundles\\312\\1\\.cp';
+    
+        cur['java.runtime.name'] = 'Java(TM) SE Runtime Environment';
+    
+        cur['java.runtime.version'] = '1.6.0_03-b05';
+    
+        cur['java.specification.name'] = 'Java Platform API Specification';
+    
+        cur['java.specification.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.specification.version'] = '1.6';
+    
+        cur['java.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vendor.url'] = 'http://java.sun.com/';
+    
+        cur['java.vendor.url.bug'] = 'http://java.sun.com/cgi-bin/bugreport.cgi';
+    
+        cur['java.version'] = '1.6.0_03';
+    
+        cur['java.vm.info'] = 'mixed mode, sharing';
+    
+        cur['java.vm.name'] = 'Java HotSpot(TM) Client VM';
+    
+        cur['java.vm.specification.name'] = 'Java Virtual Machine Specification';
+    
+        cur['java.vm.specification.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vm.specification.version'] = '1.0';
+    
+        cur['java.vm.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vm.version'] = '1.6.0_03-b05';
+    
+        cur['jdbcDialect'] = 'org.hibernate.dialect.MySQLDialect';
+    
+        cur['jdbcDriver'] = 'com.mysql.jdbc.Driver';
+    
+        cur['jdbcPassword'] = 'sa';
+    
+        cur['jdbcShowSql'] = 'true';
+    
+        cur['jdbcUrl'] = 'jdbc:mysql://localhost:3306/heh';
+    
+        cur['jdbcUseOuterJoin'] = 'true';
+    
+        cur['jdbcUsePool'] = 'true';
+    
+        cur['jdbcUser'] = 'root';
+    
+        cur['junit.dir'] = 'E:/wtp/plugins/org.junit4_4.3.1';
+    
+        cur['lib.dir'] = 'WebContent/WEB-INF/lib';
+    
+        cur['line.separator'] = ' ';
+    
+        cur['os.arch'] = 'x86';
+    
+        cur['os.name'] = 'Windows XP';
+    
+        cur['os.version'] = '5.1';
+    
+        cur['path.separator'] = ';';
+    
+        cur['poolPreparedStatements'] = 'true';
+    
+        cur['schemaexport'] = 'org.hibernate.tool.hbm2ddl.SchemaExportTask';
+    
+        cur['src.dir'] = 'src';
+    
+        cur['sun.arch.data.model'] = '32';
+    
+        cur['sun.boot.class.path'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\resources.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\rt.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\sunrsasign.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\jsse.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\jce.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\charsets.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\classes';
+    
+        cur['sun.boot.library.path'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\bin';
+    
+        cur['sun.cpu.endian'] = 'little';
+    
+        cur['sun.cpu.isalist'] = 'pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86';
+    
+        cur['sun.desktop'] = 'windows';
+    
+        cur['sun.io.unicode.encoding'] = 'UnicodeLittle';
+    
+        cur['sun.java.launcher'] = 'SUN_STANDARD';
+    
+        cur['sun.jnu.encoding'] = 'GBK';
+    
+        cur['sun.management.compiler'] = 'HotSpot Client Compiler';
+    
+        cur['sun.os.patch.level'] = 'Service Pack 2';
+    
+        cur['tomcat.dir'] = 'E:/Tomcat5.5';
+    
+        cur['transactionManagerFactory'] = 'org.hibernate.transaction.JDBCTransactionFactory';
+    
+        cur['user.country'] = 'CN';
+    
+        cur['user.dir'] = 'E:\\strutsworkspace\\struts2';
+    
+        cur['user.home'] = 'C:\\Documents and Settings\\Administrator';
+    
+        cur['user.language'] = 'zh';
+    
+        cur['user.name'] = 'Administrator';
+    
+        cur['user.timezone'] = '';
+    
+        cur['user.variant'] = '';
+    
+        cur['version'] = '1.0';
+    
+        cur['xdlib.dir'] = 'WebContent/WEB-INF/xdlib';
+    
+    cur = TestCases['test.common.component.permission.action.NavigateActionTest'] = new Array();
+    
+        cur['ant.core.lib'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant.jar';
+    
+        cur['ant.file'] = 'E:\\strutsworkspace\\struts2\\buildjunit.xml';
+    
+        cur['ant.file.struts2'] = 'E:\\strutsworkspace\\struts2\\buildjunit.xml';
+    
+        cur['ant.home'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842';
+    
+        cur['ant.java.version'] = '1.6';
+    
+        cur['ant.library.dir'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib';
+    
+        cur['ant.project.name'] = 'struts2';
+    
+        cur['ant.version'] = 'Apache Ant version 1.7.0 compiled on December 13 2006';
+    
+        cur['app.name'] = 'struts2';
+    
+        cur['app.version'] = '1.0';
+    
+        cur['awt.toolkit'] = 'sun.awt.windows.WToolkit';
+    
+        cur['basedir'] = 'E:\\strutsworkspace\\struts2';
+    
+        cur['build.dir'] = 'build';
+    
+        cur['classes.dir'] = 'WebContent/WEB-INF/classes';
+    
+        cur['eclipse.pdebuild.home'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/./';
+    
+        cur['eclipse.pdebuild.scripts'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/scripts/';
+    
+        cur['eclipse.pdebuild.templates'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/templates/';
+    
+        cur['file.encoding'] = 'GBK';
+    
+        cur['file.encoding.pkg'] = 'sun.io';
+    
+        cur['file.separator'] = '\\';
+    
+        cur['generated.dir'] = 'generated';
+    
+        cur['hibernatedoclet'] = 'xdoclet.modules.hibernate.HibernateDocletTask';
+    
+        cur['java.awt.graphicsenv'] = 'sun.awt.Win32GraphicsEnvironment';
+    
+        cur['java.awt.printerjob'] = 'sun.awt.windows.WPrinterJob';
+    
+        cur['java.class.path'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-antlr.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-bcel.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-bsf.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-log4j.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-oro.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-regexp.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-resolver.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-commons-logging.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-commons-net.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jai.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-javamail.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jdepend.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jmf.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jsch.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-junit.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-launcher.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-netrexx.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-nodeps.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-starteam.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-stylebook.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-swing.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-trax.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-weblogic.jar;E:\\wtp\\configuration\\org.eclipse.osgi\\bundles\\20\\1\\.cp\\lib\\remoteAnt.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\lib\\tools.jar;E:\\wtp\\plugins\\org.eclipse.swt.win32.win32.x86_3.3.0.v3346.jar;E:\\wtp\\plugins\\com.spket.swt_1.6.6.jar';
+    
+        cur['java.class.version'] = '50.0';
+    
+        cur['java.endorsed.dirs'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\endorsed';
+    
+        cur['java.ext.dirs'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\ext;C:\\WINDOWS\\Sun\\Java\\lib\\ext';
+    
+        cur['java.home'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre';
+    
+        cur['java.io.tmpdir'] = 'C:\\DOCUME~1\\ADMINI~1\\LOCALS~1\\Temp\\';
+    
+        cur['java.library.path'] = 'E:\\wtp;.;C:\\WINDOWS\\Sun\\Java\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;D:\\Program Files\\Java\\jre1.6.0_03\\bin\\client;D:\\Program Files\\Java\\jre1.6.0_03\\bin;D:\\Program Files\\Borland\\Delphi7\\Bin;D:\\Program Files\\Borland\\Delphi7\\Projects\\Bpl\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\Program Files\\Microsoft SQL Server\\80\\Tools\\BINN;D:\\Program Files\\Java\\jdk1.6.0_03\\bin;E:\\MySQL5.0\\bin;d:\\Program Files\\IDM Computer Solutions\\UltraEdit-32;C:\\Program Files\\CVSNT\\;E:\\wtp\\configuration\\org.eclipse.osgi\\bundles\\312\\1\\.cp';
+    
+        cur['java.runtime.name'] = 'Java(TM) SE Runtime Environment';
+    
+        cur['java.runtime.version'] = '1.6.0_03-b05';
+    
+        cur['java.specification.name'] = 'Java Platform API Specification';
+    
+        cur['java.specification.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.specification.version'] = '1.6';
+    
+        cur['java.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vendor.url'] = 'http://java.sun.com/';
+    
+        cur['java.vendor.url.bug'] = 'http://java.sun.com/cgi-bin/bugreport.cgi';
+    
+        cur['java.version'] = '1.6.0_03';
+    
+        cur['java.vm.info'] = 'mixed mode, sharing';
+    
+        cur['java.vm.name'] = 'Java HotSpot(TM) Client VM';
+    
+        cur['java.vm.specification.name'] = 'Java Virtual Machine Specification';
+    
+        cur['java.vm.specification.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vm.specification.version'] = '1.0';
+    
+        cur['java.vm.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vm.version'] = '1.6.0_03-b05';
+    
+        cur['jdbcDialect'] = 'org.hibernate.dialect.MySQLDialect';
+    
+        cur['jdbcDriver'] = 'com.mysql.jdbc.Driver';
+    
+        cur['jdbcPassword'] = 'sa';
+    
+        cur['jdbcShowSql'] = 'true';
+    
+        cur['jdbcUrl'] = 'jdbc:mysql://localhost:3306/heh';
+    
+        cur['jdbcUseOuterJoin'] = 'true';
+    
+        cur['jdbcUsePool'] = 'true';
+    
+        cur['jdbcUser'] = 'root';
+    
+        cur['junit.dir'] = 'E:/wtp/plugins/org.junit4_4.3.1';
+    
+        cur['lib.dir'] = 'WebContent/WEB-INF/lib';
+    
+        cur['line.separator'] = ' ';
+    
+        cur['os.arch'] = 'x86';
+    
+        cur['os.name'] = 'Windows XP';
+    
+        cur['os.version'] = '5.1';
+    
+        cur['path.separator'] = ';';
+    
+        cur['poolPreparedStatements'] = 'true';
+    
+        cur['schemaexport'] = 'org.hibernate.tool.hbm2ddl.SchemaExportTask';
+    
+        cur['src.dir'] = 'src';
+    
+        cur['sun.arch.data.model'] = '32';
+    
+        cur['sun.boot.class.path'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\resources.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\rt.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\sunrsasign.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\jsse.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\jce.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\charsets.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\classes';
+    
+        cur['sun.boot.library.path'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\bin';
+    
+        cur['sun.cpu.endian'] = 'little';
+    
+        cur['sun.cpu.isalist'] = 'pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86';
+    
+        cur['sun.desktop'] = 'windows';
+    
+        cur['sun.io.unicode.encoding'] = 'UnicodeLittle';
+    
+        cur['sun.java.launcher'] = 'SUN_STANDARD';
+    
+        cur['sun.jnu.encoding'] = 'GBK';
+    
+        cur['sun.management.compiler'] = 'HotSpot Client Compiler';
+    
+        cur['sun.os.patch.level'] = 'Service Pack 2';
+    
+        cur['tomcat.dir'] = 'E:/Tomcat5.5';
+    
+        cur['transactionManagerFactory'] = 'org.hibernate.transaction.JDBCTransactionFactory';
+    
+        cur['user.country'] = 'CN';
+    
+        cur['user.dir'] = 'E:\\strutsworkspace\\struts2';
+    
+        cur['user.home'] = 'C:\\Documents and Settings\\Administrator';
+    
+        cur['user.language'] = 'zh';
+    
+        cur['user.name'] = 'Administrator';
+    
+        cur['user.timezone'] = '';
+    
+        cur['user.variant'] = '';
+    
+        cur['version'] = '1.0';
+    
+        cur['xdlib.dir'] = 'WebContent/WEB-INF/xdlib';
+    
+    cur = TestCases['test.common.component.permission.action.PermissionActionTest'] = new Array();
+    
+        cur['ant.core.lib'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant.jar';
+    
+        cur['ant.file'] = 'E:\\strutsworkspace\\struts2\\buildjunit.xml';
+    
+        cur['ant.file.struts2'] = 'E:\\strutsworkspace\\struts2\\buildjunit.xml';
+    
+        cur['ant.home'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842';
+    
+        cur['ant.java.version'] = '1.6';
+    
+        cur['ant.library.dir'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib';
+    
+        cur['ant.project.name'] = 'struts2';
+    
+        cur['ant.version'] = 'Apache Ant version 1.7.0 compiled on December 13 2006';
+    
+        cur['app.name'] = 'struts2';
+    
+        cur['app.version'] = '1.0';
+    
+        cur['awt.toolkit'] = 'sun.awt.windows.WToolkit';
+    
+        cur['basedir'] = 'E:\\strutsworkspace\\struts2';
+    
+        cur['build.dir'] = 'build';
+    
+        cur['classes.dir'] = 'WebContent/WEB-INF/classes';
+    
+        cur['eclipse.pdebuild.home'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/./';
+    
+        cur['eclipse.pdebuild.scripts'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/scripts/';
+    
+        cur['eclipse.pdebuild.templates'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/templates/';
+    
+        cur['file.encoding'] = 'GBK';
+    
+        cur['file.encoding.pkg'] = 'sun.io';
+    
+        cur['file.separator'] = '\\';
+    
+        cur['generated.dir'] = 'generated';
+    
+        cur['hibernatedoclet'] = 'xdoclet.modules.hibernate.HibernateDocletTask';
+    
+        cur['java.awt.graphicsenv'] = 'sun.awt.Win32GraphicsEnvironment';
+    
+        cur['java.awt.printerjob'] = 'sun.awt.windows.WPrinterJob';
+    
+        cur['java.class.path'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-antlr.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-bcel.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-bsf.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-log4j.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-oro.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-regexp.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-resolver.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-commons-logging.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-commons-net.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jai.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-javamail.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jdepend.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jmf.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jsch.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-junit.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-launcher.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-netrexx.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-nodeps.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-starteam.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-stylebook.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-swing.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-trax.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-weblogic.jar;E:\\wtp\\configuration\\org.eclipse.osgi\\bundles\\20\\1\\.cp\\lib\\remoteAnt.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\lib\\tools.jar;E:\\wtp\\plugins\\org.eclipse.swt.win32.win32.x86_3.3.0.v3346.jar;E:\\wtp\\plugins\\com.spket.swt_1.6.6.jar';
+    
+        cur['java.class.version'] = '50.0';
+    
+        cur['java.endorsed.dirs'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\endorsed';
+    
+        cur['java.ext.dirs'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\ext;C:\\WINDOWS\\Sun\\Java\\lib\\ext';
+    
+        cur['java.home'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre';
+    
+        cur['java.io.tmpdir'] = 'C:\\DOCUME~1\\ADMINI~1\\LOCALS~1\\Temp\\';
+    
+        cur['java.library.path'] = 'E:\\wtp;.;C:\\WINDOWS\\Sun\\Java\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;D:\\Program Files\\Java\\jre1.6.0_03\\bin\\client;D:\\Program Files\\Java\\jre1.6.0_03\\bin;D:\\Program Files\\Borland\\Delphi7\\Bin;D:\\Program Files\\Borland\\Delphi7\\Projects\\Bpl\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\Program Files\\Microsoft SQL Server\\80\\Tools\\BINN;D:\\Program Files\\Java\\jdk1.6.0_03\\bin;E:\\MySQL5.0\\bin;d:\\Program Files\\IDM Computer Solutions\\UltraEdit-32;C:\\Program Files\\CVSNT\\;E:\\wtp\\configuration\\org.eclipse.osgi\\bundles\\312\\1\\.cp';
+    
+        cur['java.runtime.name'] = 'Java(TM) SE Runtime Environment';
+    
+        cur['java.runtime.version'] = '1.6.0_03-b05';
+    
+        cur['java.specification.name'] = 'Java Platform API Specification';
+    
+        cur['java.specification.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.specification.version'] = '1.6';
+    
+        cur['java.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vendor.url'] = 'http://java.sun.com/';
+    
+        cur['java.vendor.url.bug'] = 'http://java.sun.com/cgi-bin/bugreport.cgi';
+    
+        cur['java.version'] = '1.6.0_03';
+    
+        cur['java.vm.info'] = 'mixed mode, sharing';
+    
+        cur['java.vm.name'] = 'Java HotSpot(TM) Client VM';
+    
+        cur['java.vm.specification.name'] = 'Java Virtual Machine Specification';
+    
+        cur['java.vm.specification.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vm.specification.version'] = '1.0';
+    
+        cur['java.vm.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vm.version'] = '1.6.0_03-b05';
+    
+        cur['jdbcDialect'] = 'org.hibernate.dialect.MySQLDialect';
+    
+        cur['jdbcDriver'] = 'com.mysql.jdbc.Driver';
+    
+        cur['jdbcPassword'] = 'sa';
+    
+        cur['jdbcShowSql'] = 'true';
+    
+        cur['jdbcUrl'] = 'jdbc:mysql://localhost:3306/heh';
+    
+        cur['jdbcUseOuterJoin'] = 'true';
+    
+        cur['jdbcUsePool'] = 'true';
+    
+        cur['jdbcUser'] = 'root';
+    
+        cur['junit.dir'] = 'E:/wtp/plugins/org.junit4_4.3.1';
+    
+        cur['lib.dir'] = 'WebContent/WEB-INF/lib';
+    
+        cur['line.separator'] = ' ';
+    
+        cur['os.arch'] = 'x86';
+    
+        cur['os.name'] = 'Windows XP';
+    
+        cur['os.version'] = '5.1';
+    
+        cur['path.separator'] = ';';
+    
+        cur['poolPreparedStatements'] = 'true';
+    
+        cur['schemaexport'] = 'org.hibernate.tool.hbm2ddl.SchemaExportTask';
+    
+        cur['src.dir'] = 'src';
+    
+        cur['sun.arch.data.model'] = '32';
+    
+        cur['sun.boot.class.path'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\resources.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\rt.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\sunrsasign.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\jsse.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\jce.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\charsets.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\classes';
+    
+        cur['sun.boot.library.path'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\bin';
+    
+        cur['sun.cpu.endian'] = 'little';
+    
+        cur['sun.cpu.isalist'] = 'pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86';
+    
+        cur['sun.desktop'] = 'windows';
+    
+        cur['sun.io.unicode.encoding'] = 'UnicodeLittle';
+    
+        cur['sun.java.launcher'] = 'SUN_STANDARD';
+    
+        cur['sun.jnu.encoding'] = 'GBK';
+    
+        cur['sun.management.compiler'] = 'HotSpot Client Compiler';
+    
+        cur['sun.os.patch.level'] = 'Service Pack 2';
+    
+        cur['tomcat.dir'] = 'E:/Tomcat5.5';
+    
+        cur['transactionManagerFactory'] = 'org.hibernate.transaction.JDBCTransactionFactory';
+    
+        cur['user.country'] = 'CN';
+    
+        cur['user.dir'] = 'E:\\strutsworkspace\\struts2';
+    
+        cur['user.home'] = 'C:\\Documents and Settings\\Administrator';
+    
+        cur['user.language'] = 'zh';
+    
+        cur['user.name'] = 'Administrator';
+    
+        cur['user.timezone'] = '';
+    
+        cur['user.variant'] = '';
+    
+        cur['version'] = '1.0';
+    
+        cur['xdlib.dir'] = 'WebContent/WEB-INF/xdlib';
+    
+    cur = TestCases['test.common.component.permission.action.RoleActionTest'] = new Array();
+    
+        cur['ant.core.lib'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant.jar';
+    
+        cur['ant.file'] = 'E:\\strutsworkspace\\struts2\\buildjunit.xml';
+    
+        cur['ant.file.struts2'] = 'E:\\strutsworkspace\\struts2\\buildjunit.xml';
+    
+        cur['ant.home'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842';
+    
+        cur['ant.java.version'] = '1.6';
+    
+        cur['ant.library.dir'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib';
+    
+        cur['ant.project.name'] = 'struts2';
+    
+        cur['ant.version'] = 'Apache Ant version 1.7.0 compiled on December 13 2006';
+    
+        cur['app.name'] = 'struts2';
+    
+        cur['app.version'] = '1.0';
+    
+        cur['awt.toolkit'] = 'sun.awt.windows.WToolkit';
+    
+        cur['basedir'] = 'E:\\strutsworkspace\\struts2';
+    
+        cur['build.dir'] = 'build';
+    
+        cur['classes.dir'] = 'WebContent/WEB-INF/classes';
+    
+        cur['eclipse.pdebuild.home'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/./';
+    
+        cur['eclipse.pdebuild.scripts'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/scripts/';
+    
+        cur['eclipse.pdebuild.templates'] = '/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/templates/';
+    
+        cur['file.encoding'] = 'GBK';
+    
+        cur['file.encoding.pkg'] = 'sun.io';
+    
+        cur['file.separator'] = '\\';
+    
+        cur['generated.dir'] = 'generated';
+    
+        cur['hibernatedoclet'] = 'xdoclet.modules.hibernate.HibernateDocletTask';
+    
+        cur['java.awt.graphicsenv'] = 'sun.awt.Win32GraphicsEnvironment';
+    
+        cur['java.awt.printerjob'] = 'sun.awt.windows.WPrinterJob';
+    
+        cur['java.class.path'] = 'E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-antlr.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-bcel.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-bsf.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-log4j.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-oro.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-regexp.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-apache-resolver.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-commons-logging.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-commons-net.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jai.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-javamail.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jdepend.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jmf.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-jsch.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-junit.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-launcher.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-netrexx.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-nodeps.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-starteam.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-stylebook.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-swing.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-trax.jar;E:\\wtp\\plugins\\org.apache.ant_1.7.0.v200706080842\\lib\\ant-weblogic.jar;E:\\wtp\\configuration\\org.eclipse.osgi\\bundles\\20\\1\\.cp\\lib\\remoteAnt.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\lib\\tools.jar;E:\\wtp\\plugins\\org.eclipse.swt.win32.win32.x86_3.3.0.v3346.jar;E:\\wtp\\plugins\\com.spket.swt_1.6.6.jar';
+    
+        cur['java.class.version'] = '50.0';
+    
+        cur['java.endorsed.dirs'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\endorsed';
+    
+        cur['java.ext.dirs'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\ext;C:\\WINDOWS\\Sun\\Java\\lib\\ext';
+    
+        cur['java.home'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre';
+    
+        cur['java.io.tmpdir'] = 'C:\\DOCUME~1\\ADMINI~1\\LOCALS~1\\Temp\\';
+    
+        cur['java.library.path'] = 'E:\\wtp;.;C:\\WINDOWS\\Sun\\Java\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;D:\\Program Files\\Java\\jre1.6.0_03\\bin\\client;D:\\Program Files\\Java\\jre1.6.0_03\\bin;D:\\Program Files\\Borland\\Delphi7\\Bin;D:\\Program Files\\Borland\\Delphi7\\Projects\\Bpl\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\Program Files\\Microsoft SQL Server\\80\\Tools\\BINN;D:\\Program Files\\Java\\jdk1.6.0_03\\bin;E:\\MySQL5.0\\bin;d:\\Program Files\\IDM Computer Solutions\\UltraEdit-32;C:\\Program Files\\CVSNT\\;E:\\wtp\\configuration\\org.eclipse.osgi\\bundles\\312\\1\\.cp';
+    
+        cur['java.runtime.name'] = 'Java(TM) SE Runtime Environment';
+    
+        cur['java.runtime.version'] = '1.6.0_03-b05';
+    
+        cur['java.specification.name'] = 'Java Platform API Specification';
+    
+        cur['java.specification.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.specification.version'] = '1.6';
+    
+        cur['java.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vendor.url'] = 'http://java.sun.com/';
+    
+        cur['java.vendor.url.bug'] = 'http://java.sun.com/cgi-bin/bugreport.cgi';
+    
+        cur['java.version'] = '1.6.0_03';
+    
+        cur['java.vm.info'] = 'mixed mode, sharing';
+    
+        cur['java.vm.name'] = 'Java HotSpot(TM) Client VM';
+    
+        cur['java.vm.specification.name'] = 'Java Virtual Machine Specification';
+    
+        cur['java.vm.specification.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vm.specification.version'] = '1.0';
+    
+        cur['java.vm.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vm.version'] = '1.6.0_03-b05';
+    
+        cur['jdbcDialect'] = 'org.hibernate.dialect.MySQLDialect';
+    
+        cur['jdbcDriver'] = 'com.mysql.jdbc.Driver';
+    
+        cur['jdbcPassword'] = 'sa';
+    
+        cur['jdbcShowSql'] = 'true';
+    
+        cur['jdbcUrl'] = 'jdbc:mysql://localhost:3306/heh';
+    
+        cur['jdbcUseOuterJoin'] = 'true';
+    
+        cur['jdbcUsePool'] = 'true';
+    
+        cur['jdbcUser'] = 'root';
+    
+        cur['junit.dir'] = 'E:/wtp/plugins/org.junit4_4.3.1';
+    
+        cur['lib.dir'] = 'WebContent/WEB-INF/lib';
+    
+        cur['line.separator'] = ' ';
+    
+        cur['os.arch'] = 'x86';
+    
+        cur['os.name'] = 'Windows XP';
+    
+        cur['os.version'] = '5.1';
+    
+        cur['path.separator'] = ';';
+    
+        cur['poolPreparedStatements'] = 'true';
+    
+        cur['schemaexport'] = 'org.hibernate.tool.hbm2ddl.SchemaExportTask';
+    
+        cur['src.dir'] = 'src';
+    
+        cur['sun.arch.data.model'] = '32';
+    
+        cur['sun.boot.class.path'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\resources.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\rt.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\sunrsasign.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\jsse.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\jce.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\lib\\charsets.jar;D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\classes';
+    
+        cur['sun.boot.library.path'] = 'D:\\Program Files\\Java\\jdk1.6.0_03\\jre\\bin';
+    
+        cur['sun.cpu.endian'] = 'little';
+    
+        cur['sun.cpu.isalist'] = 'pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86';
+    
+        cur['sun.desktop'] = 'windows';
+    
+        cur['sun.io.unicode.encoding'] = 'UnicodeLittle';
+    
+        cur['sun.java.launcher'] = 'SUN_STANDARD';
+    
+        cur['sun.jnu.encoding'] = 'GBK';
+    
+        cur['sun.management.compiler'] = 'HotSpot Client Compiler';
+    
+        cur['sun.os.patch.level'] = 'Service Pack 2';
+    
+        cur['tomcat.dir'] = 'E:/Tomcat5.5';
+    
+        cur['transactionManagerFactory'] = 'org.hibernate.transaction.JDBCTransactionFactory';
+    
+        cur['user.country'] = 'CN';
+    
+        cur['user.dir'] = 'E:\\strutsworkspace\\struts2';
+    
+        cur['user.home'] = 'C:\\Documents and Settings\\Administrator';
+    
+        cur['user.language'] = 'zh';
+    
+        cur['user.name'] = 'Administrator';
+    
+        cur['user.timezone'] = '';
+    
+        cur['user.variant'] = '';
+    
+        cur['version'] = '1.0';
+    
+        cur['xdlib.dir'] = 'WebContent/WEB-INF/xdlib';
+    </script><script type="text/javascript" language="JavaScript">
+        function displayProperties (name) {
+          var win = window.open('','JUnitSystemProperties','scrollbars=1,resizable=1');
+          var doc = win.document;
+          doc.open();
+          doc.write("<html><head><title>Properties of " + name + "</title>");
+          doc.write("<style>")
+          doc.write("body {font:normal 68% verdana,arial,helvetica; color:#000000; }");
+          doc.write("table tr td, table tr th { font-size: 68%; }");
+          doc.write("table.properties { border-collapse:collapse; border-left:solid 1 #cccccc; border-top:solid 1 #cccccc; padding:5px; }");
+          doc.write("table.properties th { text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#eeeeee; }");
+          doc.write("table.properties td { font:normal; text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#fffffff; }");
+          doc.write("h3 { margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica }");
+          doc.write("</style>");
+          doc.write("</head><body>");
+          doc.write("<h3>Properties of " + name + "</h3>");
+          doc.write("<div align=\"right\"><a href=\"javascript:window.close();\">Close</a></div>");
+          doc.write("<table class='properties'>");
+          doc.write("<tr><th>Name</th><th>Value</th></tr>");
+          for (prop in TestCases[name]) {
+            doc.write("<tr><th>" + prop + "</th><td>" + TestCases[name][prop] + "</td></tr>");
+          }
+          doc.write("</table>");
+          doc.write("</body></html>");
+          doc.close();
+          win.focus();
+        }
+      
+      </script>
+</head>
+<body>
+<a name="top"></a>
+<h1>Unit Test Results</h1>
+<table width="100%">
+<tr>
+<td align="left"></td><td align="right">Designed for use with <a href="http://www.junit.org">JUnit</a> and <a href="http://ant.apache.org/ant">Ant</a>.</td>
+</tr>
+</table>
+<hr size="1">
+<h2>Summary</h2>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Tests</th><th>Failures</th><th>Errors</th><th>Success rate</th><th>Time</th>
+</tr>
+<tr valign="top" class="Failure">
+<td>56</td><td>2</td><td>3</td><td>91.07%</td><td>86.078</td>
+</tr>
+</table>
+<table border="0" width="95%">
+<tr>
+<td style="text-align: justify;">
+        Note: <i>failures</i> are anticipated and checked for with assertions while <i>errors</i> are unanticipated.
+        </td>
+</tr>
+</table>
+<hr size="1" width="95%" align="left">
+<h2>Packages</h2>
+        Note: package statistics are not computed recursively, they only sum up all of its testsuites numbers.
+        <table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th nowrap>Time(s)</th><th nowrap>Time Stamp</th><th>Host</th>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="#test.common.component.cms.action">test.common.component.cms.action</a></td><td>31</td><td>3</td><td>2</td><td>53.531</td><td>2009-06-23T14:02:54</td><td>WWW-6746401C5A7</td>
+</tr>
+<tr valign="top" class="">
+<td><a href="#test.common.component.permission.action">test.common.component.permission.action</a></td><td>25</td><td>0</td><td>0</td><td>32.547</td><td>2009-06-23T14:03:47</td><td>WWW-6746401C5A7</td>
+</tr>
+</table>
+<hr size="1" width="95%" align="left">
+<a name="test.common.component.cms.action"></a>
+<h3>Package test.common.component.cms.action</h3>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th nowrap>Time(s)</th><th nowrap>Time Stamp</th><th>Host</th>
+</tr>
+<tr valign="top" class="">
+<td><a href="#AttributeActionTest">AttributeActionTest</a></td><td>6</td><td>0</td><td>0</td><td>27.156</td><td>2009-06-23T14:02:54</td><td>WWW-6746401C5A7</td>
+</tr>
+<tr valign="top" class="">
+<td><a href="#CatalogueActionTest">CatalogueActionTest</a></td><td>7</td><td>0</td><td>0</td><td>8.734</td><td>2009-06-23T14:03:21</td><td>WWW-6746401C5A7</td>
+</tr>
+<tr valign="top" class="">
+<td><a href="#ContentActionTest">ContentActionTest</a></td><td>6</td><td>0</td><td>0</td><td>7.516</td><td>2009-06-23T14:03:30</td><td>WWW-6746401C5A7</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="#ExcelActionTest">ExcelActionTest</a></td><td>6</td><td>0</td><td>2</td><td>5.719</td><td>2009-06-23T14:03:37</td><td>WWW-6746401C5A7</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a href="#HttpActionTest">HttpActionTest</a></td><td>6</td><td>3</td><td>0</td><td>4.406</td><td>2009-06-23T14:03:43</td><td>WWW-6746401C5A7</td>
+</tr>
+</table>
+<a href="#top">Back to top</a>
+<p></p>
+<p></p>
+<a name="test.common.component.permission.action"></a>
+<h3>Package test.common.component.permission.action</h3>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th nowrap>Time(s)</th><th nowrap>Time Stamp</th><th>Host</th>
+</tr>
+<tr valign="top" class="">
+<td><a href="#AdminActionTest">AdminActionTest</a></td><td>6</td><td>0</td><td>0</td><td>8.078</td><td>2009-06-23T14:03:47</td><td>WWW-6746401C5A7</td>
+</tr>
+<tr valign="top" class="">
+<td><a href="#HelloWorldTest">HelloWorldTest</a></td><td>3</td><td>0</td><td>0</td><td>5.672</td><td>2009-06-23T14:03:55</td><td>WWW-6746401C5A7</td>
+</tr>
+<tr valign="top" class="">
+<td><a href="#LoginActionTest">LoginActionTest</a></td><td>1</td><td>0</td><td>0</td><td>1.078</td><td>2009-06-23T14:04:01</td><td>WWW-6746401C5A7</td>
+</tr>
+<tr valign="top" class="">
+<td><a href="#NavigateActionTest">NavigateActionTest</a></td><td>6</td><td>0</td><td>0</td><td>7.562</td><td>2009-06-23T14:04:02</td><td>WWW-6746401C5A7</td>
+</tr>
+<tr valign="top" class="">
+<td><a href="#PermissionActionTest">PermissionActionTest</a></td><td>3</td><td>0</td><td>0</td><td>3.391</td><td>2009-06-23T14:04:10</td><td>WWW-6746401C5A7</td>
+</tr>
+<tr valign="top" class="">
+<td><a href="#RoleActionTest">RoleActionTest</a></td><td>6</td><td>0</td><td>0</td><td>6.766</td><td>2009-06-23T14:04:13</td><td>WWW-6746401C5A7</td>
+</tr>
+</table>
+<a href="#top">Back to top</a>
+<p></p>
+<p></p>
+<hr size="1" width="95%" align="left">
+<a name="AdminActionTest"></a>
+<h3>TestCase AdminActionTest</h3>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="">
+<td>testSave</td><td>Success</td><td></td><td>1.438</td>
+</tr>
+<tr valign="top" class="">
+<td>testDelete</td><td>Success</td><td></td><td>1.593</td>
+</tr>
+<tr valign="top" class="">
+<td>testUpdate</td><td>Success</td><td></td><td>1.532</td>
+</tr>
+<tr valign="top" class="">
+<td>testSearch</td><td>Success</td><td></td><td>1.047</td>
+</tr>
+<tr valign="top" class="">
+<td>testNewOne</td><td>Success</td><td></td><td>1.062</td>
+</tr>
+<tr valign="top" class="">
+<td>testEdit</td><td>Success</td><td></td><td>1.375</td>
+</tr>
+</table>
+<div class="Properties">
+<a href="javascript:displayProperties('test.common.component.permission.action.AdminActionTest');">
+                    Properties &raquo;
+                </a>
+</div>
+<p></p>
+<a href="#top">Back to top</a><a name="AttributeActionTest"></a>
+<h3>TestCase AttributeActionTest</h3>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="">
+<td>testSave</td><td>Success</td><td></td><td>21.343</td>
+</tr>
+<tr valign="top" class="">
+<td>testDelete</td><td>Success</td><td></td><td>1.672</td>
+</tr>
+<tr valign="top" class="">
+<td>testUpdate</td><td>Success</td><td></td><td>1.578</td>
+</tr>
+<tr valign="top" class="">
+<td>testSearch</td><td>Success</td><td></td><td>1.110</td>
+</tr>
+<tr valign="top" class="">
+<td>testNewOne</td><td>Success</td><td></td><td>0.797</td>
+</tr>
+<tr valign="top" class="">
+<td>testEdit</td><td>Success</td><td></td><td>0.437</td>
+</tr>
+</table>
+<div class="Properties">
+<a href="javascript:displayProperties('test.common.component.cms.action.AttributeActionTest');">
+                    Properties &raquo;
+                </a>
+</div>
+<p></p>
+<a href="#top">Back to top</a><a name="CatalogueActionTest"></a>
+<h3>TestCase CatalogueActionTest</h3>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="">
+<td>testSave</td><td>Success</td><td></td><td>1.687</td>
+</tr>
+<tr valign="top" class="">
+<td>testDelete</td><td>Success</td><td></td><td>1.532</td>
+</tr>
+<tr valign="top" class="">
+<td>testUpdate</td><td>Success</td><td></td><td>1.468</td>
+</tr>
+<tr valign="top" class="">
+<td>testSearch</td><td>Success</td><td></td><td>0.985</td>
+</tr>
+<tr valign="top" class="">
+<td>testNewOne</td><td>Success</td><td></td><td>0.687</td>
+</tr>
+<tr valign="top" class="">
+<td>testEdit</td><td>Success</td><td></td><td>0.688</td>
+</tr>
+<tr valign="top" class="">
+<td>testCreateTable</td><td>Success</td><td></td><td>1.656</td>
+</tr>
+</table>
+<div class="Properties">
+<a href="javascript:displayProperties('test.common.component.cms.action.CatalogueActionTest');">
+                    Properties &raquo;
+                </a>
+</div>
+<p></p>
+<a href="#top">Back to top</a><a name="ContentActionTest"></a>
+<h3>TestCase ContentActionTest</h3>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="">
+<td>testSave</td><td>Success</td><td></td><td>1.781</td>
+</tr>
+<tr valign="top" class="">
+<td>testDelete</td><td>Success</td><td></td><td>1.703</td>
+</tr>
+<tr valign="top" class="">
+<td>testUpdate</td><td>Success</td><td></td><td>1.703</td>
+</tr>
+<tr valign="top" class="">
+<td>testSearch</td><td>Success</td><td></td><td>1.360</td>
+</tr>
+<tr valign="top" class="">
+<td>testNewOne</td><td>Success</td><td></td><td>0.656</td>
+</tr>
+<tr valign="top" class="">
+<td>testEdit</td><td>Success</td><td></td><td>0.297</td>
+</tr>
+</table>
+<div class="Properties">
+<a href="javascript:displayProperties('test.common.component.cms.action.ContentActionTest');">
+                    Properties &raquo;
+                </a>
+</div>
+<p></p>
+<a href="#top">Back to top</a><a name="ExcelActionTest"></a>
+<h3>TestCase ExcelActionTest</h3>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="">
+<td>testSave</td><td>Success</td><td></td><td>1.343</td>
+</tr>
+<tr valign="top" class="Error">
+<td>testDelete</td><td>Failure</td><td> no exist record to deleted <code>
+<br>
+<br>junit.framework.AssertionFailedError:  no exist record to deleted <br/>	at test.common.component.cms.action.ExcelActionTest.testDelete(ExcelActionTest.java:125)<br/>	at org.eclipse.ant.internal.ui.antsupport.EclipseDefaultExecutor.executeTargets(EclipseDefaultExecutor.java:32)<br/>	at org.eclipse.ant.internal.ui.antsupport.InternalAntRunner.run(InternalAntRunner.java:423)<br/>	at org.eclipse.ant.internal.ui.antsupport.InternalAntRunner.main(InternalAntRunner.java:137)<br/></code></td><td>0.641</td>
+</tr>
+<tr valign="top" class="Error">
+<td>testUpdate</td><td>Failure</td><td> no exist record to update <code>
+<br>
+<br>junit.framework.AssertionFailedError:  no exist record to update <br/>	at test.common.component.cms.action.ExcelActionTest.testUpdate(ExcelActionTest.java:152)<br/>	at org.eclipse.ant.internal.ui.antsupport.EclipseDefaultExecutor.executeTargets(EclipseDefaultExecutor.java:32)<br/>	at org.eclipse.ant.internal.ui.antsupport.InternalAntRunner.run(InternalAntRunner.java:423)<br/>	at org.eclipse.ant.internal.ui.antsupport.InternalAntRunner.main(InternalAntRunner.java:137)<br/></code></td><td>0.297</td>
+</tr>
+<tr valign="top" class="">
+<td>testSearch</td><td>Success</td><td></td><td>1.078</td>
+</tr>
+<tr valign="top" class="">
+<td>testNewOne</td><td>Success</td><td></td><td>2.031</td>
+</tr>
+<tr valign="top" class="">
+<td>testEdit</td><td>Success</td><td></td><td>0.313</td>
+</tr>
+</table>
+<div class="Properties">
+<a href="javascript:displayProperties('test.common.component.cms.action.ExcelActionTest');">
+                    Properties &raquo;
+                </a>
+</div>
+<p></p>
+<a href="#top">Back to top</a><a name="HelloWorldTest"></a>
+<h3>TestCase HelloWorldTest</h3>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="">
+<td>testInterceptorsBySettingDomainObjects</td><td>Success</td><td></td><td>2.453</td>
+</tr>
+<tr valign="top" class="">
+<td>testInterceptorsBySettingRequestParameters</td><td>Success</td><td></td><td>2.719</td>
+</tr>
+<tr valign="top" class="">
+<td>testActionAndSkipInterceptors</td><td>Success</td><td></td><td>0.469</td>
+</tr>
+</table>
+<div class="Properties">
+<a href="javascript:displayProperties('test.common.component.permission.action.HelloWorldTest');">
+                    Properties &raquo;
+                </a>
+</div>
+<p></p>
+<a href="#top">Back to top</a><a name="HttpActionTest"></a>
+<h3>TestCase HttpActionTest</h3>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="Error">
+<td>testSave</td><td>Error</td><td>SQL array must not be empty<code>
+<br>
+<br>java.lang.IllegalArgumentException: SQL array must not be empty<br/>	at org.springframework.util.Assert.notEmpty(Assert.java:214)<br/>	at org.springframework.jdbc.core.JdbcTemplate.batchUpdate(JdbcTemplate.java:501)<br/>	at common.component.ectable.dao.jdbc.EcTableDAOJdbcImpl4MySQL.executeBatch(EcTableDAOJdbcImpl4MySQL.java:127)<br/>	at common.component.cms.service.impl.HttpServiceImpl.save(HttpServiceImpl.java:118)<br/>	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:301)<br/>	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:182)<br/>	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:149)<br/>	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:106)<br/>	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)<br/>	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)<br/>	at $Proxy7.save(Unknown Source)<br/>	at common.component.cms.action.HttpAction.save(HttpAction.java:78)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation.invokeAction(DefaultActionInvocation.java:404)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation.invokeActionOnly(DefaultActionInvocation.java:267)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:229)<br/>	at com.opensymphony.xwork2.interceptor.DefaultWorkflowInterceptor.doIntercept(DefaultWorkflowInterceptor.java:221)<br/>	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:86)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)<br/>	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)<br/>	at com.opensymphony.xwork2.validator.ValidationInterceptor.doIntercept(ValidationInterceptor.java:150)<br/>	at org.apache.struts2.interceptor.validation.AnnotationValidationInterceptor.doIntercept(AnnotationValidationInterceptor.java:48)<br/>	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:86)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)<br/>	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)<br/>	at com.opensymphony.xwork2.interceptor.ConversionErrorInterceptor.intercept(ConversionErrorInterceptor.java:123)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)<br/>	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)<br/>	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:167)<br/>	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:86)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)<br/>	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)<br/>	at com.opensymphony.xwork2.interceptor.StaticParametersInterceptor.intercept(StaticParametersInterceptor.java:105)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)<br/>	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)<br/>	at org.apache.struts2.interceptor.CheckboxInterceptor.intercept(CheckboxInterceptor.java:83)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)<br/>	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)<br/>	at org.apache.struts2.interceptor.FileUploadInterceptor.intercept(FileUploadInterceptor.java:207)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)<br/>	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)<br/>	at com.opensymphony.xwork2.interceptor.ModelDrivenInterceptor.intercept(ModelDrivenInterceptor.java:74)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)<br/>	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)<br/>	at com.opensymphony.xwork2.interceptor.ScopedModelDrivenInterceptor.intercept(ScopedModelDrivenInterceptor.java:127)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)<br/>	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)<br/>	at org.apache.struts2.interceptor.ProfilingActivationInterceptor.intercept(ProfilingActivationInterceptor.java:107)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)<br/>	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)<br/>	at org.apache.struts2.interceptor.debugging.DebuggingInterceptor.intercept(DebuggingInterceptor.java:206)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)<br/>	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)<br/>	at com.opensymphony.xwork2.interceptor.ChainingInterceptor.intercept(ChainingInterceptor.java:115)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)<br/>	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)<br/>	at com.opensymphony.xwork2.interceptor.I18nInterceptor.intercept(I18nInterceptor.java:143)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)<br/>	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)<br/>	at com.opensymphony.xwork2.interceptor.PrepareInterceptor.doIntercept(PrepareInterceptor.java:121)<br/>	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:86)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)<br/>	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)<br/>	at org.apache.struts2.interceptor.ServletConfigInterceptor.intercept(ServletConfigInterceptor.java:170)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)<br/>	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)<br/>	at com.opensymphony.xwork2.interceptor.AliasInterceptor.intercept(AliasInterceptor.java:123)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)<br/>	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)<br/>	at com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor.intercept(ExceptionMappingInterceptor.java:176)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)<br/>	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)<br/>	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)<br/>	at org.apache.struts2.impl.StrutsActionProxy.execute(StrutsActionProxy.java:50)<br/>	at test.common.component.cms.action.HttpActionTest.testSave(HttpActionTest.java:88)<br/>	at org.eclipse.ant.internal.ui.antsupport.EclipseDefaultExecutor.executeTargets(EclipseDefaultExecutor.java:32)<br/>	at org.eclipse.ant.internal.ui.antsupport.InternalAntRunner.run(InternalAntRunner.java:423)<br/>	at org.eclipse.ant.internal.ui.antsupport.InternalAntRunner.main(InternalAntRunner.java:137)<br/></code></td><td>1.015</td>
+</tr>
+<tr valign="top" class="Error">
+<td>testDelete</td><td>Error</td><td>SQL array must not be empty<code>
+<br>
+<br>java.lang.IllegalArgumentException: SQL array must not be empty<br/>	at org.springframework.util.Assert.notEmpty(Assert.java:214)<br/>	at org.springframework.jdbc.core.JdbcTemplate.batchUpdate(JdbcTemplate.java:501)<br/>	at common.component.ectable.dao.jdbc.EcTableDAOJdbcImpl4MySQL.executeBatch(EcTableDAOJdbcImpl4MySQL.java:127)<br/>	at common.component.cms.service.impl.HttpServiceImpl.save(HttpServiceImpl.java:118)<br/>	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:301)<br/>	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:182)<br/>	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:149)<br/>	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:106)<br/>	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)<br/>	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)<br/>	at $Proxy7.save(Unknown Source)<br/>	at common.component.cms.action.HttpAction.save(HttpAction.java:78)<br/>	at test.common.component.cms.action.HttpActionTest.testDelete(HttpActionTest.java:119)<br/>	at org.eclipse.ant.internal.ui.antsupport.EclipseDefaultExecutor.executeTargets(EclipseDefaultExecutor.java:32)<br/>	at org.eclipse.ant.internal.ui.antsupport.InternalAntRunner.run(InternalAntRunner.java:423)<br/>	at org.eclipse.ant.internal.ui.antsupport.InternalAntRunner.main(InternalAntRunner.java:137)<br/></code></td><td>0.469</td>
+</tr>
+<tr valign="top" class="Error">
+<td>testUpdate</td><td>Error</td><td>StatementCallback; bad SQL grammar [select  p_id,p_title  from in_sale alias where  p_title='test' ]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'p_title' in 'field list'<code>
+<br>
+<br>org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [select  p_id,p_title  from in_sale alias where  p_title='test' ]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'p_title' in 'field list'<br/>	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.translate(SQLExceptionSubclassTranslator.java:78)<br/>	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.translate(SQLErrorCodeSQLExceptionTranslator.java:237)<br/>	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:382)<br/>	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:433)<br/>	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:441)<br/>	at common.component.ectable.dao.jdbc.EcTableDAOJdbcImpl4MySQL.getSimpleList(EcTableDAOJdbcImpl4MySQL.java:113)<br/>	at common.component.cms.service.impl.HttpServiceImpl.getList(HttpServiceImpl.java:327)<br/>	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:301)<br/>	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:182)<br/>	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:149)<br/>	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:106)<br/>	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)<br/>	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)<br/>	at $Proxy7.getList(Unknown Source)<br/>	at test.common.component.cms.action.HttpActionTest.getOneContentId(HttpActionTest.java:187)<br/>	at test.common.component.cms.action.HttpActionTest.testUpdate(HttpActionTest.java:149)<br/>	at org.eclipse.ant.internal.ui.antsupport.EclipseDefaultExecutor.executeTargets(EclipseDefaultExecutor.java:32)<br/>	at org.eclipse.ant.internal.ui.antsupport.InternalAntRunner.run(InternalAntRunner.java:423)<br/>	at org.eclipse.ant.internal.ui.antsupport.InternalAntRunner.main(InternalAntRunner.java:137)<br/>Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'p_title' in 'field list'<br/>	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)<br/>	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)<br/>	at com.mysql.jdbc.Util.getInstance(Util.java:378)<br/>	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1031)<br/>	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)<br/>	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3361)<br/>	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3295)<br/>	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1852)<br/>	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1975)<br/>	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2470)<br/>	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2399)<br/>	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1218)<br/>	at org.apache.commons.dbcp.DelegatingStatement.executeQuery(DelegatingStatement.java:205)<br/>	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:418)<br/>	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:371)<br/></code></td><td>0.313</td>
+</tr>
+<tr valign="top" class="">
+<td>testSearch</td><td>Success</td><td></td><td>0.812</td>
+</tr>
+<tr valign="top" class="">
+<td>testNewOne</td><td>Success</td><td></td><td>0.969</td>
+</tr>
+<tr valign="top" class="">
+<td>testEdit</td><td>Success</td><td></td><td>0.812</td>
+</tr>
+</table>
+<div class="Properties">
+<a href="javascript:displayProperties('test.common.component.cms.action.HttpActionTest');">
+                    Properties &raquo;
+                </a>
+</div>
+<p></p>
+<a href="#top">Back to top</a><a name="LoginActionTest"></a>
+<h3>TestCase LoginActionTest</h3>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="">
+<td>testExecute</td><td>Success</td><td></td><td>1.062</td>
+</tr>
+</table>
+<div class="Properties">
+<a href="javascript:displayProperties('test.common.component.permission.action.LoginActionTest');">
+                    Properties &raquo;
+                </a>
+</div>
+<p></p>
+<a href="#top">Back to top</a><a name="NavigateActionTest"></a>
+<h3>TestCase NavigateActionTest</h3>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="">
+<td>testSave</td><td>Success</td><td></td><td>1.296</td>
+</tr>
+<tr valign="top" class="">
+<td>testDelete</td><td>Success</td><td></td><td>1.719</td>
+</tr>
+<tr valign="top" class="">
+<td>testUpdate</td><td>Success</td><td></td><td>1.860</td>
+</tr>
+<tr valign="top" class="">
+<td>testSearch</td><td>Success</td><td></td><td>1.218</td>
+</tr>
+<tr valign="top" class="">
+<td>testNewOne</td><td>Success</td><td></td><td>0.828</td>
+</tr>
+<tr valign="top" class="">
+<td>testEdit</td><td>Success</td><td></td><td>0.625</td>
+</tr>
+</table>
+<div class="Properties">
+<a href="javascript:displayProperties('test.common.component.permission.action.NavigateActionTest');">
+                    Properties &raquo;
+                </a>
+</div>
+<p></p>
+<a href="#top">Back to top</a><a name="PermissionActionTest"></a>
+<h3>TestCase PermissionActionTest</h3>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="">
+<td>testSave</td><td>Success</td><td></td><td>1.531</td>
+</tr>
+<tr valign="top" class="">
+<td>testSearch</td><td>Success</td><td></td><td>1.141</td>
+</tr>
+<tr valign="top" class="">
+<td>testEdit</td><td>Success</td><td></td><td>0.703</td>
+</tr>
+</table>
+<div class="Properties">
+<a href="javascript:displayProperties('test.common.component.permission.action.PermissionActionTest');">
+                    Properties &raquo;
+                </a>
+</div>
+<p></p>
+<a href="#top">Back to top</a><a name="RoleActionTest"></a>
+<h3>TestCase RoleActionTest</h3>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="">
+<td>testSave</td><td>Success</td><td></td><td>1.328</td>
+</tr>
+<tr valign="top" class="">
+<td>testDelete</td><td>Success</td><td></td><td>1.500</td>
+</tr>
+<tr valign="top" class="">
+<td>testUpdate</td><td>Success</td><td></td><td>1.500</td>
+</tr>
+<tr valign="top" class="">
+<td>testSearch</td><td>Success</td><td></td><td>0.984</td>
+</tr>
+<tr valign="top" class="">
+<td>testNewOne</td><td>Success</td><td></td><td>0.719</td>
+</tr>
+<tr valign="top" class="">
+<td>testEdit</td><td>Success</td><td></td><td>0.703</td>
+</tr>
+</table>
+<div class="Properties">
+<a href="javascript:displayProperties('test.common.component.permission.action.RoleActionTest');">
+                    Properties &raquo;
+                </a>
+</div>
+<p></p>
+<a href="#top">Back to top</a>
+</body>
+</html>

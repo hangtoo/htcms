@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <package name="permission" namespace="/permission" extends="struts-default">
+    
+		<!-- 登录模块 -->
+        <action name="login_*" method="{1}" class="loginAction">
+        	<result name="input">/common/component/permission/login/login.jsp</result>
+            <result name="success1">/common/desktop/desktop.jsp</result>
+            <result name="success">/common/component/permission/login/welcome.jsp</result>
+        </action>
+        
+        <!-- 用户管理模块 -->
+        <!-- 
+        admin_*:
+        search newOne edit=>
+        searchadmin.jsp newOneadmin.jsp editadmin.jsp(return input)操作界面
+        
+        admindb_*:
+        remove save update =(redirect-action、chain)>search(return success)数据库操作
+        
+        -->
+         
+        <!-- 
+		admindb_save.action=>AdminAction.save()=>success=>admin_search.action        
+        admindb_delete.action=>AdminAction.delete()=>success=>admin_search.action
+        admindb_update.action=>AdminAction.update()=>success=>admin_search.action
+        return success数据库操作
+        
+		admin_search.action=>AdminAction.search()=>success=>searchadmin.jsp
+        admin_newOne.action=>AdminAction.newOne()=>success=>newOneadmin.jsp
+        admin_edit.action=>AdminAction.edit()=>success=>editadmin.jsp
+        return success操作界面
+        
+         --> 
+        
+        <action name="admin_*" method="{1}" class="adminAction">
+			<result name="success">/common/component/permission/admin/{1}admin.jsp</result>
+        </action>
+        
+        <action name="admindb_*" method="{1}" class="adminAction">
+			<result name="success"  type="chain">
+				<param name="actionName">admin_search</param>
+				<param name="namespace">/permission</param>
+			</result>
+        </action>
+
+		<!-- 角色管理模块 -->
+        
+        <action name="role_*" method="{1}" class="roleAction">
+			<result name="success">/common/component/permission/role/{1}role.jsp</result>
+        </action>
+        
+        <action name="roledb_*" method="{1}" class="roleAction">
+			<result name="success"  type="chain">
+				<param name="actionName">role_search</param>
+				<param name="namespace">/permission</param>
+			</result>
+        </action>
+        
+
+		<!-- 功能导航管理模块 -->
+        
+        <action name="navigate_*" method="{1}" class="navigateAction">
+			<result name="success">/common/component/permission/navigate/{1}navigate.jsp</result>
+        </action>
+        
+        <action name="navigatedb_*" method="{1}" class="navigateAction">
+			<result name="success"  type="chain">
+				<param name="actionName">navigate_search</param>
+				<param name="namespace">/permission</param>
+			</result>
+        </action>
+        
+		<!-- 权限管理模块 -->
+        
+        <action name="permission_*" method="{1}" class="permissionAction">
+			<result name="success">/common/component/permission/permission/{1}permission.jsp</result>
+        </action>
+        
+        <action name="permissiondb_*" method="{1}" class="permissionAction">
+			<result name="success"  type="chain">
+				<param name="actionName">permission_search</param>
+				<param name="namespace">/permission</param>
+			</result>
+        </action>
+
+        <!-- 默认模块 必须放在该配置文件的结尾 -->
+        <action name="*" class="loginAction">
+			<result name="{1}" type="chain">
+				<param name="actionName">login</param>
+				<param name="namespace">/permission</param>
+			</result>
+        </action>
+        <!-- Add actions here -->
+    </package>
+</struts>

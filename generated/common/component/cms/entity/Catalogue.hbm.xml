@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="common.component.cms.entity.Catalogue"
+        table="t_catalogue"
+        dynamic-update="true"
+        dynamic-insert="true"
+    >
+
+        <id
+            name="id"
+            column="p_id"
+            type="java.lang.String"
+            unsaved-value="-1"
+        >
+            <generator class="uuid.hex">
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Catalogue.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <set
+            name="attributes"
+            lazy="true"
+            inverse="true"
+            cascade="delete"
+            sort="unsorted"
+            order-by="p_id"
+        >
+
+            <key
+                column="p_catalog"
+            >
+            </key>
+
+            <one-to-many
+                  class="common.component.cms.entity.Attribute"
+            />
+
+        </set>
+
+        <property
+            name="name"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="p_name"
+            length="64"
+        />
+
+        <many-to-one
+            name="parent"
+            class="common.component.cms.entity.Catalogue"
+            cascade="none"
+            outer-join="true"
+            update="true"
+            insert="true"
+            column="p_parent"
+        />
+
+        <property
+            name="order"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="p_order"
+        />
+
+        <set
+            name="children"
+            lazy="true"
+            inverse="true"
+            cascade="delete"
+            sort="unsorted"
+            order-by="p_order"
+        >
+
+            <key
+                column="p_parent"
+            >
+            </key>
+
+            <one-to-many
+                  class="common.component.cms.entity.Catalogue"
+            />
+
+        </set>
+
+        <property
+            name="tablename"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="p_tablename"
+        />
+
+        <property
+            name="version"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="p_version"
+        />
+
+        <property
+            name="createTime"
+            type="java.sql.Timestamp"
+            update="false"
+            insert="true"
+            column="p_createTime"
+        />
+
+        <property
+            name="modifyTime"
+            type="java.sql.Timestamp"
+            update="true"
+            insert="false"
+            column="p_modifyTime"
+        />
+
+        <property
+            name="creator"
+            type="string"
+            update="false"
+            insert="true"
+            column="p_creator"
+        />
+
+        <property
+            name="modifier"
+            type="string"
+            update="true"
+            insert="false"
+            column="p_modifier"
+        />
+
+        <property
+            name="remark"
+            type="string"
+            update="true"
+            insert="true"
+            column="p_remark"
+        />
+
+        <property
+            name="deleted"
+            type="java.lang.Boolean"
+            update="true"
+            insert="false"
+            column="p_deleted"
+        />
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Catalogue.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

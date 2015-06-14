@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="common.component.permission.entity.Permission"
+        table="t_permission"
+        dynamic-update="true"
+        dynamic-insert="true"
+    >
+
+        <id
+            name="id"
+            column="p_id"
+            type="java.lang.String"
+            unsaved-value="-1"
+        >
+            <generator class="uuid.hex">
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Permission.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <many-to-one
+            name="role"
+            class="common.component.permission.entity.Role"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            column="p_role"
+        />
+
+        <property
+            name="checked"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="p_checked"
+        />
+
+        <many-to-one
+            name="navigate"
+            class="common.component.permission.entity.Navigate"
+            cascade="none"
+            outer-join="true"
+            update="true"
+            insert="true"
+            column="p_navigate"
+        />
+
+        <property
+            name="createTime"
+            type="java.sql.Timestamp"
+            update="false"
+            insert="true"
+            column="p_createTime"
+        />
+
+        <property
+            name="modifyTime"
+            type="java.sql.Timestamp"
+            update="true"
+            insert="false"
+            column="p_modifyTime"
+        />
+
+        <property
+            name="creator"
+            type="string"
+            update="false"
+            insert="true"
+            column="p_creator"
+        />
+
+        <property
+            name="modifier"
+            type="string"
+            update="true"
+            insert="false"
+            column="p_modifier"
+        />
+
+        <property
+            name="remark"
+            type="string"
+            update="true"
+            insert="true"
+            column="p_remark"
+        />
+
+        <property
+            name="deleted"
+            type="java.lang.Boolean"
+            update="true"
+            insert="false"
+            column="p_deleted"
+        />
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Permission.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

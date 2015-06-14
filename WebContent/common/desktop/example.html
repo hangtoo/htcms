@@ -1,0 +1,172 @@
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>struts2.0</title>
+
+    <link rel="stylesheet" type="text/css" href="/struts2/common/extjs/resources/css/ext-all.css" />
+    <link rel="stylesheet" type="text/css" href="/struts2/common/desktop/css/desktop.css" />
+
+    <!-- GC -->
+ 	<!-- LIBS -->
+ 	<script type="text/javascript" src="/struts2/common/extjs/adapter/ext/ext-base.js"></script>
+ 	<!-- ENDLIBS -->
+
+    <script type="text/javascript" src="/struts2/common/extjs/ext-all-debug.js"></script>
+
+    <!-- DESKTOP -->
+    <script type="text/javascript" src="/struts2/common/desktop/js/StartMenu.js"></script>
+    <script type="text/javascript" src="/struts2/common/desktop/js/TaskBar.js"></script>
+    <script type="text/javascript" src="/struts2/common/desktop/js/Desktop.js"></script>
+    <script type="text/javascript" src="/struts2/common/desktop/js/App.js"></script>
+    <script type="text/javascript" src="/struts2/common/desktop/js/Module.js"></script>
+    <script type="text/javascript" src="/struts2/common/desktop/js/CookieProvider-ex.js"></script>
+    
+    <script type="text/javascript" src="/struts2/common/desktop/miframe.js"></script>
+    
+    
+    <script type="text/javascript" src="/struts2/common/extjs/build/locale/ext-lang-zh_CN-min.js"></script>
+    <script type="text/javascript">
+    
+	MyDesktop = new Ext.app.App({
+		init :function(){
+			Ext.QuickTips.init();
+		},
+	
+		getModules : function(){
+			return [
+	            new MyDesktop.BogusMenuModule()
+			];
+		},
+	
+	    // config for the start menu
+	    getStartConfig : function(){
+	        return {
+	            title: 'admin',
+	            iconCls: 'user',
+	            toolItems: [{
+	                text:'设置',
+	                iconCls:'settings',
+	                scope:this
+	            },'-',{
+	                text:'退出登录',
+	                iconCls:'logout',
+	                scope:this
+	            }]
+	        };
+	    }
+	});
+    
+    var windowIndex = 0;
+
+	MyDesktop.BogusModule = Ext.extend(Ext.app.Module, {
+	    init : function(){
+	        this.launcher = {
+	            text: 'Window '+(++windowIndex),
+	            iconCls:'bogus',
+	            handler : this.createWindow,
+	            scope: this,
+	            windowId:windowIndex
+	        }
+	    },
+	
+	    createWindow : function(src){
+	        var desktop = this.app.getDesktop();
+	        var win = desktop.getWindow('bogus'+src.windowId);
+	
+	        if(!win){
+	            win = desktop.createWindow({
+	                id: 'bogus'+src.windowId,
+	                title:src.text,
+	                width:640,
+	                height:480,
+	                layout : 'fit',
+	                items: {  
+	                       xtype          : 'iframepanel', 
+	                       defaultSrc  : src.URL
+	                    },
+	
+	                iconCls: 'bogus',
+	                shim:false,
+	                frame:true,
+	                animCollapse:false,
+	                constrainHeader:true
+	            });
+	        }
+	        win.show();
+	    }
+	});
+    
+    
+	MyDesktop.BogusMenuModule = Ext.extend(MyDesktop.BogusModule, {
+	    init : function(){
+	        this.launcher = {
+	            text: '程序(P)',
+	            iconCls: 'bogus',
+	            handler: function() {
+					return false;
+				},
+	            menu: {
+	                items:[
+						{windowId:9,text:'系统菜单',scope: this,handler :  function() {return false;},
+						menu:{
+						items:[
+						{windowId:9009,text:'配置管理',scope: this,handler :  function() {return false;},
+						menu:{
+						items:[
+						{windowId:90091,text:'新增参数',scope: this,handler :  this.createWindow,iconCls:'bogus'}
+						,{windowId:90092,text:'参数列表',scope: this,handler :  this.createWindow,iconCls:'bogus'}
+						]}
+						,iconCls:'bogus'}
+						]}
+						,iconCls:'bogus'}
+	                ]
+	            }
+	        }
+	    }
+	});
+    </script>
+    <style>
+		/* shortcuts */
+		#grid-win-shortcut img {
+		    width:48px;
+		    height:48px;
+		    background-image: url(/struts2/common/desktop/images/grid48x48.png);
+		    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/struts2/common/desktop/images/grid48x48.png', sizingMethod='scale');
+		}
+		#acc-win-shortcut img {
+		    width:48px;
+		    height:48px;
+		    background-image: url(/struts2/common/desktop/images/im48x48.png);
+		    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/struts2/common/desktop/images/im48x48.png', sizingMethod='scale');
+		}
+    
+    </style>
+    
+</head>
+<body scroll="no">
+
+<div id="x-desktop">
+    <a href="#" target="_blank" style="margin:5px; float:right;"></a>
+
+    <dl id="x-shortcuts">
+        <dt id="grid-win-shortcut">
+            <a href="#"><img src="/struts2/common/desktop/images/s.gif" />
+            <div>struts 2.0</div></a>
+        </dt>
+        <dt id="acc-win-shortcut">
+            <a href="#"><img src="/struts2/common/desktop/images/s.gif" />
+            <div>Accordion Window</div></a>
+        </dt>
+    </dl>
+</div>
+
+<div id="ux-taskbar">
+	<div id="ux-taskbar-start"></div>
+	<div id="ux-taskbuttons-panel"></div>
+	<div class="x-clear"></div>
+</div>
+
+</body>
+</html>

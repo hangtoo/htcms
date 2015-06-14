@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd">
+    
+	<!-- dao -->
+  	<bean id="adminDao" class="common.component.permission.dao.impl.AdminDaoImpl">
+		<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+	</bean>
+
+  	<bean id="navigateDao" class="common.component.permission.dao.impl.NavigateDaoImpl">
+		<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+	</bean>
+
+	<bean id="roleDao" class="common.component.permission.dao.impl.RoleDaoImpl">
+		<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+	</bean>
+
+	<bean id="permissionDao" class="common.component.permission.dao.impl.PermissionDaoImpl">
+		<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+	</bean>
+
+	   
+	<!-- service -->
+	<bean id="adminService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="common.component.permission.service.impl.AdminServiceImpl">
+				<constructor-arg ref="adminDao" />
+				<constructor-arg ref="ecTableDAOJdbc" />
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="navigateService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="common.component.permission.service.impl.NavigateServiceImpl">
+				<constructor-arg ref="navigateDao" />
+				<constructor-arg ref="ecTableDAOJdbc" />
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="roleService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="common.component.permission.service.impl.RoleServiceImpl">
+				<constructor-arg ref="roleDao" />
+				<constructor-arg ref="ecTableDAOJdbc" />
+			</bean>
+		</property>
+	</bean>	
+	
+	<bean id="permissionService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="common.component.permission.service.impl.PermissionServiceImpl">
+				<constructor-arg ref="permissionDao" />
+				<constructor-arg ref="ecTableDAOJdbc" />
+			</bean>
+		</property>
+	</bean>	
+
+	<!-- action -->
+    <bean id="loginAction" scope="prototype"
+        class="common.component.permission.action.LoginAction">
+        <constructor-arg ref="adminService" />
+        <constructor-arg ref="permissionService" />
+        <constructor-arg ref="catalogrightService" />
+    </bean>
+    
+    <bean id="adminAction" scope="prototype"
+        class="common.component.permission.action.AdminAction">
+        <constructor-arg ref="adminService" />
+        <constructor-arg ref="roleService" />
+    </bean>
+
+	<bean id="roleAction" scope="prototype"
+        class="common.component.permission.action.RoleAction">
+        <constructor-arg ref="roleService" />
+    </bean>
+    
+	<bean id="permissionAction" scope="prototype"
+        class="common.component.permission.action.PermissionAction">
+        <constructor-arg ref="roleService" />
+        <constructor-arg ref="navigateService" />
+		<constructor-arg ref="permissionService" />
+    </bean>
+    
+	<bean id="navigateAction" scope="prototype"
+        class="common.component.permission.action.NavigateAction">
+        <constructor-arg ref="navigateService" />
+    </bean>
+ 
+</beans>

@@ -1,0 +1,87 @@
+/***内容整体布局***/
+/*
+#contentfloat {
+	overflow:hidden;
+	float: right; padding: 0px;margin-left: -169px; margin-right:1px;margin-top: -1px;
+	width: 99%; height: 100%; 
+	height: 100%;
+}
+
+#contenttitle{
+	position: relative;
+	margin-left: 169px;margin-top: 10px;padding:0;
+	color:#196E89;
+	background-color: inherit; 	color:#0F5B7F; font-size:105%; font-weight:bold;
+	
+}
+#content {
+	overflow:hidden;border-bottom:1px solid #F0F0F0;
+	padding: 0px;margin-left: 169px;margin-top: 0px;
+	height: 100%;
+}
+*/
+
+/**顶层菜单导航条**/
+.top {
+	padding:0; margin:0;
+	height:99px;width:100%;
+	background: #196E89;
+	color:#fff;
+}
+.top_stat {
+	height: 99px;
+	FLOAT: right; vertical-align: bottom;
+	
+}
+.top_stat ul{margin-top: 69px;}
+.top_stat ul li{ display:inline; color:#FFB424;font-weight: lighter;}
+.top_stat a{color:#FFB424;}
+
+.top_logo {
+	FLOAT: left;padding: 0; margin: 0;
+	height:105px; width: 169px; 
+	background: #FFB424;
+	position:fixed;
+}
+.top_logo ul{margin-top: 10px;font-size: larger;}
+.top_logo ul li{ display:inline;}
+
+/**左边菜单**/
+.left_menu{
+	float:left;padding: 0; margin-top: -1px;
+	background: #FFF url(../images/leftbg.jpg) repeat-x;
+	width: 169px; height: 230px;
+	position:fixed;
+	overflow-x:hidden;
+}
+.left_menu p{
+	padding-left: 10px;padding-top: 10px;
+}
+
+
+/**body**/
+body {
+	margin:0; padding:0;
+	font: 79% Arial, Sans-Serif; color:#000; line-height: 1.4em;
+	background : #FFF;
+}
+
+/**operate-left**/
+.operate_left{
+	FLOAT: left;padding: 0; margin: 0;
+	height:230px; width: 169px; 
+	position:fixed;
+}
+
+/**operate-middle**/
+.operate_middle{
+	padding: 0; margin: 0;
+	height:230px; width: 169px; 
+	position:relative;
+}
+
+/**operate-right**/
+.operate_right{
+	height: 99px;
+	FLOAT: right; vertical-align: bottom;
+}

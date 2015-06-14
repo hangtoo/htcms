@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="struts2" default="junittest" basedir=".">
+	<property file="build.properties" />
+
+	<path id="project.class.path">
+		<fileset dir="${lib.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+		<pathelement path="${build.dir}" />
+		<pathelement path="${generated.dir}" />
+		<pathelement path="${classes.dir}" />
+		<fileset dir="${junit.dir}">
+			<include name="junit*.jar" />
+		</fileset>
+		<fileset dir="${tomcat.dir}">
+			<include name="**/servlet-api*.jar" />
+			<include name="**/jsp-api*.jar" />
+		</fileset>
+	</path>
+
+	<!-- =================================================================== -->
+	<!-- 							  使用说明 							     -->
+	<!-- =================================================================== -->
+	<target name="help">
+		<echo message="junit工具自动测试" />
+		<echo message="-----------------------------------" />
+		<echo message="" />
+		<echo message="提供以下任务：" />
+		<echo message="" />
+		<echo message="junittest		--> 单元测试" />
+		<echo message="" />
+	</target>
+
+	<target name="junittest">
+		<junit printsummary="yes">
+			<classpath refid="project.class.path">
+			</classpath>
+			<batchtest>
+				<fileset dir="${classes.dir}">
+					<!--找到要测试的用例，前面加两个星表示可以是N层目录，加一个星表示可以是随意字符集
+					**/*Test.class
+					-->
+					<include name="test/common/component/permission/action/*Test.class" />
+					<include name="test/common/component/cms/action/*Test.class" />
+				</fileset>
+				<!--把执行的结果生成成XML文件-->
+				<formatter type="xml" />
+			</batchtest>
+		</junit>
+		<junitreport todir=".">
+			<fileset dir=".">
+				<!--把测试后生成的XML取出来-->
+				<include name="TEST-*.xml" />
+			</fileset>
+			<!--把测试得到的XML转成文档，可采用noframes，也可采用frames-->
+			<report format="noframes" todir="." />
+		</junitreport>
+	</target>
+
+</project>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <package name="user" namespace="/user" extends="struts-default">
+        
+        <!-- 用户管理模块 -->
+        <!-- 
+        admin_*:
+        search newOne edit=>
+        searchadmin.jsp newOneadmin.jsp editadmin.jsp(return input)操作界面
+        
+        admindb_*:
+        remove save update =>search(return success)数据库操作
+        
+        -->
+         
+        <!-- 
+		admindb_save.action=>AdminAction.save()=>success=>admin_search.action        
+        admindb_delete.action=>AdminAction.delete()=>success=>admin_search.action
+        admindb_update.action=>AdminAction.update()=>success=>admin_search.action
+        return success数据库操作
+        
+		admin_search.action=>AdminAction.search()=>success=>searchadmin.jsp
+        admin_newOne.action=>AdminAction.newOne()=>success=>newOneadmin.jsp
+        admin_edit.action=>AdminAction.edit()=>success=>editadmin.jsp
+        return success操作界面
+        
+        --> 
+
+		<!-- 登录模块 -->
+        <action name="login_*" method="{1}" class="userAction">
+        	<result name="input">/common/component/application/user/login.jsp</result>
+            <result name="success">/common/component/application/nurl/mynurl.jsp</result>
+        </action>
+
+		<!-- 注册模块 -->
+        <action name="register_*" method="{1}" class="userAction">
+        	<result name="input">/common/component/application/user/register.jsp</result>
+            <result name="success">/common/component/application/user/login.jsp</result>
+        </action>
+          
+  
+
+		<!-- 会员管理模块 -->
+        
+        <action name="user_*" method="{1}" class="userAction">
+			<result name="success">/common/component/application/user/{1}user.jsp</result>
+        </action>
+        
+        <action name="userdb_*" method="{1}" class="userAction">
+			<result name="success"  type="chain">
+				<param name="actionName">user_search</param>
+				<param name="namespace">/user</param>
+			</result>
+        </action>
+        
+        <!-- 默认模块 必须放在该配置文件的结尾 -->
+
+        <!-- Add actions here -->
+    </package>
+</struts>

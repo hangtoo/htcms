@@ -1,0 +1,48 @@
+2015-04-25 11:03:20,751 DEBUG [thread applet-common.component.applet.GlobeApplet.class] applet.GlobeApplet (GlobeApplet.java:230) - PATH
+2015-04-25 11:03:20,754 DEBUG [thread applet-common.component.applet.GlobeApplet.class] applet.GlobeApplet (GlobeApplet.java:236) - 
+2015-04-25 11:03:20,754 DEBUG [thread applet-common.component.applet.GlobeApplet.class] applet.GlobeApplet (GlobeApplet.java:230) - PASSWORD
+2015-04-25 11:03:20,755 DEBUG [thread applet-common.component.applet.GlobeApplet.class] applet.GlobeApplet (GlobeApplet.java:236) - 
+2015-04-25 11:03:20,755 DEBUG [thread applet-common.component.applet.GlobeApplet.class] applet.GlobeApplet (GlobeApplet.java:230) - BEAN.CATALOGUE.ID
+2015-04-25 11:03:20,755 DEBUG [thread applet-common.component.applet.GlobeApplet.class] applet.GlobeApplet (GlobeApplet.java:236) - 
+2015-04-25 11:03:20,756 DEBUG [thread applet-common.component.applet.GlobeApplet.class] applet.GlobeApplet (GlobeApplet.java:230) - BEAN.CATALOGUE.NAME
+2015-04-25 11:03:20,757 DEBUG [thread applet-common.component.applet.GlobeApplet.class] applet.GlobeApplet (GlobeApplet.java:236) - 
+2015-04-25 11:03:20,757 DEBUG [thread applet-common.component.applet.GlobeApplet.class] applet.GlobeApplet (GlobeApplet.java:230) - EDITURL
+2015-04-25 11:03:20,757 DEBUG [thread applet-common.component.applet.GlobeApplet.class] applet.GlobeApplet (GlobeApplet.java:236) - 
+2015-04-25 11:03:20,758 DEBUG [thread applet-common.component.applet.GlobeApplet.class] applet.GlobeApplet (GlobeApplet.java:230) - SAVEURL
+2015-04-25 11:03:20,758 DEBUG [thread applet-common.component.applet.GlobeApplet.class] applet.GlobeApplet (GlobeApplet.java:236) - 
+2015-04-25 11:03:20,758 DEBUG [thread applet-common.component.applet.GlobeApplet.class] applet.GlobeApplet (GlobeApplet.java:230) - UPDATEURL
+2015-04-25 11:03:20,758 DEBUG [thread applet-common.component.applet.GlobeApplet.class] applet.GlobeApplet (GlobeApplet.java:236) - 
+2015-04-25 11:08:09,336 DEBUG [thread applet-common.component.applet.GlobeApplet.class] applet.GlobeApplet (GlobeApplet.java:230) - PATH
+2015-04-25 11:08:09,338 DEBUG [thread applet-common.component.applet.GlobeApplet.class] applet.GlobeApplet (GlobeApplet.java:236) - 
+2015-04-25 11:08:09,338 DEBUG [thread applet-common.component.applet.GlobeApplet.class] applet.GlobeApplet (GlobeApplet.java:230) - PASSWORD
+2015-04-25 11:08:09,338 DEBUG [thread applet-common.component.applet.GlobeApplet.class] applet.GlobeApplet (GlobeApplet.java:236) - 
+2015-04-25 11:08:09,338 DEBUG [thread applet-common.component.applet.GlobeApplet.class] applet.GlobeApplet (GlobeApplet.java:230) - BEAN.CATALOGUE.ID
+2015-04-25 11:08:09,338 DEBUG [thread applet-common.component.applet.GlobeApplet.class] applet.GlobeApplet (GlobeApplet.java:236) - 
+2015-04-25 11:08:09,338 DEBUG [thread applet-common.component.applet.GlobeApplet.class] applet.GlobeApplet (GlobeApplet.java:230) - BEAN.CATALOGUE.NAME
+2015-04-25 11:08:09,338 DEBUG [thread applet-common.component.applet.GlobeApplet.class] applet.GlobeApplet (GlobeApplet.java:236) - 
+2015-04-25 11:08:09,339 DEBUG [thread applet-common.component.applet.GlobeApplet.class] applet.GlobeApplet (GlobeApplet.java:230) - EDITURL
+2015-04-25 11:08:09,339 DEBUG [thread applet-common.component.applet.GlobeApplet.class] applet.GlobeApplet (GlobeApplet.java:236) - 
+2015-04-25 11:08:09,339 DEBUG [thread applet-common.component.applet.GlobeApplet.class] applet.GlobeApplet (GlobeApplet.java:230) - SAVEURL
+2015-04-25 11:08:09,339 DEBUG [thread applet-common.component.applet.GlobeApplet.class] applet.GlobeApplet (GlobeApplet.java:236) - 
+2015-04-25 11:08:09,339 DEBUG [thread applet-common.component.applet.GlobeApplet.class] applet.GlobeApplet (GlobeApplet.java:230) - UPDATEURL
+2015-04-25 11:08:09,339 DEBUG [thread applet-common.component.applet.GlobeApplet.class] applet.GlobeApplet (GlobeApplet.java:236) - 
+2015-04-25 11:08:16,119 DEBUG [AWT-EventQueue-1] applet.GlobeApplet$2 (GlobeApplet.java:119) - 
+2015-04-25 11:08:16,120 DEBUG [AWT-EventQueue-1] applet.GlobeApplet$2 (GlobeApplet.java:120) - 
+2015-04-25 11:08:18,406 DEBUG [AWT-EventQueue-1] applet.GlobeApplet$1 (GlobeApplet.java:95) - 
+2015-04-25 11:08:18,406 DEBUG [AWT-EventQueue-1] applet.GlobeApplet$1 (GlobeApplet.java:96) - 
+2015-04-25 11:08:20,615 INFO  [AWT-EventQueue-1] excel.ExcelDispatch (ExcelDispatch.java:74) - Quit
+2015-04-25 11:08:21,518 DEBUG [AWT-EventQueue-1] applet.GlobeApplet$4 (GlobeApplet.java:158) - 
+2015-04-25 11:08:21,519 DEBUG [AWT-EventQueue-1] applet.GlobeApplet$4 (GlobeApplet.java:159) - 
+2015-04-25 11:08:21,520 DEBUG [AWT-EventQueue-1] applet.GlobeApplet$4 (GlobeApplet.java:161) - 
+2015-04-25 11:08:21,521 DEBUG [AWT-EventQueue-1] applet.GlobeApplet$4 (GlobeApplet.java:162) - 
+2015-04-25 11:08:21,561 ERROR [AWT-EventQueue-1] applet.GlobeApplet (GlobeApplet.java:248) - no record selected to deal
+2015-04-25 11:08:26,094 DEBUG [AWT-EventQueue-1] applet.GlobeApplet$2 (GlobeApplet.java:119) - 
+2015-04-25 11:08:26,098 DEBUG [AWT-EventQueue-1] applet.GlobeApplet$2 (GlobeApplet.java:120) - 
+2015-04-25 11:08:28,987 INFO  [AWT-EventQueue-1] excel.ExcelDispatch (ExcelDispatch.java:74) - Quit
+2015-04-25 11:08:29,943 DEBUG [AWT-EventQueue-1] applet.GlobeApplet$4 (GlobeApplet.java:158) - 
+2015-04-25 11:08:29,943 DEBUG [AWT-EventQueue-1] applet.GlobeApplet$4 (GlobeApplet.java:159) - 
+2015-04-25 11:08:29,943 DEBUG [AWT-EventQueue-1] applet.GlobeApplet$4 (GlobeApplet.java:161) - 
+2015-04-25 11:08:29,944 DEBUG [AWT-EventQueue-1] applet.GlobeApplet$4 (GlobeApplet.java:162) - 
+2015-04-25 11:08:29,944 ERROR [AWT-EventQueue-1] applet.GlobeApplet (GlobeApplet.java:248) - no record selected to deal
+2015-04-25 11:08:31,921 INFO  [thread applet-common.component.applet.GlobeApplet.class] excel.ExcelDispatch (ExcelDispatch.java:74) - Quit
+2015-04-25 11:08:31,932 DEBUG [thread applet-common.component.applet.GlobeApplet.class] applet.GlobeApplet (GlobeApplet.java:187) - destory

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="WWW-6746401C5A7" name="test.common.component.permission.action.LoginActionTest" tests="1" time="1.078" timestamp="2009-06-23T14:04:01">
+  <properties>
+    <property name="java.vendor" value="Sun Microsystems Inc." />
+    <property name="jdbcPassword" value="sa" />
+    <property name="lib.dir" value="WebContent/WEB-INF/lib" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="eclipse.pdebuild.templates" value="/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/templates/" />
+    <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/heh" />
+    <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+    <property name="os.name" value="Windows XP" />
+    <property name="sun.boot.class.path" value="D:\Program Files\Java\jdk1.6.0_03\jre\lib\resources.jar;D:\Program Files\Java\jdk1.6.0_03\jre\lib\rt.jar;D:\Program Files\Java\jdk1.6.0_03\jre\lib\sunrsasign.jar;D:\Program Files\Java\jdk1.6.0_03\jre\lib\jsse.jar;D:\Program Files\Java\jdk1.6.0_03\jre\lib\jce.jar;D:\Program Files\Java\jdk1.6.0_03\jre\lib\charsets.jar;D:\Program Files\Java\jdk1.6.0_03\jre\classes" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="ant.home" value="E:\wtp\plugins\org.apache.ant_1.7.0.v200706080842" />
+    <property name="java.runtime.version" value="1.6.0_03-b05" />
+    <property name="user.name" value="Administrator" />
+    <property name="jdbcDriver" value="com.mysql.jdbc.Driver" />
+    <property name="build.dir" value="build" />
+    <property name="user.language" value="zh" />
+    <property name="sun.boot.library.path" value="D:\Program Files\Java\jdk1.6.0_03\jre\bin" />
+    <property name="jdbcUseOuterJoin" value="true" />
+    <property name="ant.project.name" value="struts2" />
+    <property name="java.version" value="1.6.0_03" />
+    <property name="version" value="1.0" />
+    <property name="user.timezone" value="" />
+    <property name="tomcat.dir" value="E:/Tomcat5.5" />
+    <property name="sun.arch.data.model" value="32" />
+    <property name="java.endorsed.dirs" value="D:\Program Files\Java\jdk1.6.0_03\jre\lib\endorsed" />
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+    <property name="sun.jnu.encoding" value="GBK" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="\" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="classes.dir" value="WebContent/WEB-INF/classes" />
+    <property name="java.class.version" value="50.0" />
+    <property name="user.country" value="CN" />
+    <property name="java.home" value="D:\Program Files\Java\jdk1.6.0_03\jre" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="ant.file" value="E:\strutsworkspace\struts2\buildjunit.xml" />
+    <property name="os.version" value="5.1" />
+    <property name="path.separator" value=";" />
+    <property name="java.vm.version" value="1.6.0_03-b05" />
+    <property name="user.variant" value="" />
+    <property name="ant.library.dir" value="E:\wtp\plugins\org.apache.ant_1.7.0.v200706080842\lib" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="eclipse.pdebuild.scripts" value="/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/scripts/" />
+    <property name="user.home" value="C:\Documents and Settings\Administrator" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="junit.dir" value="E:/wtp/plugins/org.junit4_4.3.1" />
+    <property name="java.library.path" value="E:\wtp;.;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Program Files\Java\jre1.6.0_03\bin\client;D:\Program Files\Java\jre1.6.0_03\bin;D:\Program Files\Borland\Delphi7\Bin;D:\Program Files\Borland\Delphi7\Projects\Bpl\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Microsoft SQL Server\80\Tools\BINN;D:\Program Files\Java\jdk1.6.0_03\bin;E:\MySQL5.0\bin;d:\Program Files\IDM Computer Solutions\UltraEdit-32;C:\Program Files\CVSNT\;E:\wtp\configuration\org.eclipse.osgi\bundles\312\1\.cp" />
+    <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="poolPreparedStatements" value="true" />
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="java.class.path" value="E:\wtp\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant.jar;E:\wtp\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-antlr.jar;E:\wtp\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-apache-bcel.jar;E:\wtp\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-apache-bsf.jar;E:\wtp\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-apache-log4j.jar;E:\wtp\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-apache-oro.jar;E:\wtp\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-apache-regexp.jar;E:\wtp\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-apache-resolver.jar;E:\wtp\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-commons-logging.jar;E:\wtp\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-commons-net.jar;E:\wtp\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-jai.jar;E:\wtp\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-javamail.jar;E:\wtp\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-jdepend.jar;E:\wtp\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-jmf.jar;E:\wtp\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-jsch.jar;E:\wtp\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-junit.jar;E:\wtp\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-launcher.jar;E:\wtp\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-netrexx.jar;E:\wtp\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-nodeps.jar;E:\wtp\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-starteam.jar;E:\wtp\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-stylebook.jar;E:\wtp\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-swing.jar;E:\wtp\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-trax.jar;E:\wtp\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant-weblogic.jar;E:\wtp\configuration\org.eclipse.osgi\bundles\20\1\.cp\lib\remoteAnt.jar;D:\Program Files\Java\jdk1.6.0_03\lib\tools.jar;E:\wtp\plugins\org.eclipse.swt.win32.win32.x86_3.3.0.v3346.jar;E:\wtp\plugins\com.spket.swt_1.6.6.jar" />
+    <property name="ant.version" value="Apache Ant version 1.7.0 compiled on December 13 2006" />
+    <property name="jdbcUsePool" value="true" />
+    <property name="app.name" value="struts2" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="Service Pack 2" />
+    <property name="eclipse.pdebuild.home" value="/E:/wtp/plugins/org.eclipse.pde.build_3.3.0.v20070612/./" />
+    <property name="java.io.tmpdir" value="C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\" />
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="os.arch" value="x86" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="java.ext.dirs" value="D:\Program Files\Java\jdk1.6.0_03\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
+    <property name="hibernatedoclet" value="xdoclet.modules.hibernate.HibernateDocletTask" />
+    <property name="jdbcDialect" value="org.hibernate.dialect.MySQLDialect" />
+    <property name="user.dir" value="E:\strutsworkspace\struts2" />
+    <property name="line.separator" value="
+" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+    <property name="app.version" value="1.0" />
+    <property name="ant.file.struts2" value="E:\strutsworkspace\struts2\buildjunit.xml" />
+    <property name="basedir" value="E:\strutsworkspace\struts2" />
+    <property name="ant.java.version" value="1.6" />
+    <property name="ant.core.lib" value="E:\wtp\plugins\org.apache.ant_1.7.0.v200706080842\lib\ant.jar" />
+    <property name="jdbcUser" value="root" />
+    <property name="file.encoding" value="GBK" />
+    <property name="xdlib.dir" value="WebContent/WEB-INF/xdlib" />
+    <property name="schemaexport" value="org.hibernate.tool.hbm2ddl.SchemaExportTask" />
+    <property name="java.specification.version" value="1.6" />
+    <property name="generated.dir" value="generated" />
+    <property name="src.dir" value="src" />
+    <property name="transactionManagerFactory" value="org.hibernate.transaction.JDBCTransactionFactory" />
+    <property name="jdbcShowSql" value="true" />
+  </properties>
+  <testcase classname="test.common.component.permission.action.LoginActionTest" name="testExecute" time="1.062" />
+  <system-out><![CDATA[Hibernate: select admin0_.p_id as p1_0_, admin0_.p_name as p2_0_, admin0_.p_password as p3_0_, admin0_.p_role as p4_0_, admin0_.p_username as p5_0_, admin0_.p_position as p6_0_, admin0_.p_group as p7_0_, admin0_.p_createTime as p8_0_, admin0_.p_modifyTime as p9_0_, admin0_.p_creator as p10_0_, admin0_.p_modifier as p11_0_, admin0_.p_remark as p12_0_, admin0_.p_deleted as p13_0_ from t_admin admin0_ where 1=1 and (admin0_.p_deleted is null) and admin0_.p_username='admin'
+2009-06-23 22:04:02,703 INFO  [main] action.LoginAction (LoginAction.java:140) - import the cms component
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <package name="cms" namespace="/cms" extends="struts-default">
+        
+        <!-- 用户管理模块 -->
+        <!-- 
+        admin_*:
+        search newOne edit=>
+        searchadmin.jsp newOneadmin.jsp editadmin.jsp(return input)操作界面
+        
+        admindb_*:
+        remove save update =>search(return success)数据库操作
+        
+        -->
+         
+        <!-- 
+		admindb_save.action=>AdminAction.save()=>success=>admin_search.action        
+        admindb_delete.action=>AdminAction.delete()=>success=>admin_search.action
+        admindb_update.action=>AdminAction.update()=>success=>admin_search.action
+        return success数据库操作
+        
+		admin_search.action=>AdminAction.search()=>success=>searchadmin.jsp
+        admin_newOne.action=>AdminAction.newOne()=>success=>newOneadmin.jsp
+        admin_edit.action=>AdminAction.edit()=>success=>editadmin.jsp
+        return success操作界面
+        
+        --> 
+
+		<!-- 栏目管理模块 -->
+        
+        <action name="catalogue_*" method="{1}" class="catalogueAction">
+			<result name="success">/common/component/cms/catalogue/{1}catalogue.jsp</result>
+        </action>
+        
+        <action name="cataloguedb_*" method="{1}" class="catalogueAction">
+			<result name="success"  type="chain">
+				<param name="actionName">catalogue_search</param>
+				<param name="namespace">/cms</param>
+			</result>
+        </action>
+        
+		<!-- 权限管理模块 -->
+        
+        <action name="catalogright_*" method="{1}" class="catalogrightAction">
+			<result name="success">/common/component/cms/catalogright/{1}catalogright.jsp</result>
+        </action>
+        
+        <action name="catalogrightdb_*" method="{1}" class="catalogrightAction">
+			<result name="success"  type="chain">
+				<param name="actionName">catalogright_search</param>
+				<param name="namespace">/cms</param>
+			</result>
+        </action>
+        
+		<!-- 栏目属性管理模块 -->
+        
+        <action name="attribute_*" method="{1}" class="attributeAction">
+			<result name="success">/common/component/cms/attribute/{1}attribute.jsp</result>
+        </action>
+        
+        <action name="attributedb_*" method="{1}" class="attributeAction">
+			<result name="success"  type="chain">
+				<param name="actionName">attribute_search</param>
+				<param name="namespace">/cms</param>
+			</result>
+        </action>
+        
+		<!-- 内容管理模块 -->
+        
+        <action name="content_*" method="{1}" class="contentAction">
+			<result name="success">/common/component/cms/content/{1}content.jsp</result>
+        </action>
+        
+        <action name="contentdb_*" method="{1}" class="contentAction">
+			<result name="success"  type="chain">
+				<param name="actionName">content_search</param>
+				<param name="namespace">/cms</param>
+			</result>
+        </action>
+        
+		<!-- 内容http管理模块 -->
+        
+        <action name="http_*" method="{1}" class="httpAction">
+			<result name="success">/common/component/cms/http/{1}http.jsp</result>
+        </action>
+        
+        <action name="httpdb_*" method="{1}" class="httpAction">
+			<result name="success">/common/component/cms/http/rethttp.jsp</result>
+        </action>
+        
+		<!-- 内容excel管理模块 -->
+        	<!-- 查询 -->
+        <action name="excel_*" method="{1}" class="excelAction">
+			<result name="success">/common/component/cms/excel/{1}excel.jsp</result>
+        </action>
+        	<!-- 保存 修改 (文件上传)-->
+        <action name="exceldb_*" method="{1}" class="excelAction">
+			<result name="success"  type="chain">
+				<param name="actionName">excel_search</param>
+				<param name="namespace">/cms</param>
+			</result>
+        </action>
+        	<!-- 新增 编辑 (文件下载)-->
+		<action name="excelfile_*" method="{1}file" class="excelAction">
+            <result name="success" type="stream">
+                <!-- 对应Action中的属性documentFileContentType -->  
+            	<param name="contentType">${documentFileContentType}</param>  
+                <!-- Action中对应的stream的属性名 -->  
+            	<param name="inputName">stream</param>  
+                <!-- 对应ReportsAction中的属性documentFileFileName，定义流输出格式 -->  
+            	<param name="contentDisposition">${documentFileFileName}</param>  
+                <!-- 定义bufferSize，可选 -->  
+            	<param name="bufferSize">1024</param>  
+
+			</result>
+		</action>
+        
+        <!-- 默认模块 必须放在该配置文件的结尾 -->
+
+        <!-- Add actions here -->
+    </package>
+</struts>

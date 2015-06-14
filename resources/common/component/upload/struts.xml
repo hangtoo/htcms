@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="upload" namespace="/upload" extends="struts-default">	
+		<action name="save" method="save" class="uploadAction">
+            <result name="success">/common/component/upload/resultfile.jsp</result>
+		</action>
+		<action name="download" method="download" class="uploadAction">
+            <result name="success" type="stream">
+                      <!-- 对应Action中的属性documentFileContentType -->  
+            <param name="contentType">${documentFileContentType}</param>  
+                      <!-- Action中对应的stream的属性名 -->  
+            <param name="inputName">stream</param>  
+                      <!-- 对应ReportsAction中的属性documentFileFileName，定义流输出格式 -->  
+            <param name="contentDisposition">${documentFileFileName}</param>  
+                      <!-- 定义bufferSize，可选 -->  
+            <param name="bufferSize">1024</param>  
+
+			</result>
+		</action>
+	</package>	
+</struts>

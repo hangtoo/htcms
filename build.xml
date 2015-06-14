@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="struts2" default="schemaexport" basedir=".">
+	<property file="build.properties" />
+
+	<path id="project.class.path">
+		<fileset dir="${xdlib.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${lib.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+		<pathelement path="${build.dir}" />
+		<pathelement path="E:/strutsworkspace/hibernate-src/bin" />
+		<pathelement path="${generated.dir}" />
+	</path>
+
+	<fileset id="hibernate.mapping.files" dir="${build.dir}">
+		<include name="**/*.hbm.xml" />
+	</fileset>
+
+	<!-- =================================================================== -->
+	<!-- 							  使用说明 							     -->
+	<!-- =================================================================== -->
+	<target name="help">
+		<echo message="利用工具开发Hibernate" />
+		<echo message="-----------------------------------" />
+		<echo message="" />
+		<echo message="提供以下任务：" />
+		<echo message="" />
+		<echo message="init				 --> 对generate-hbm一些参数进行设置" />
+		<echo message="generate-hbm      --> 运行HibernateDoclet，生成 Hibernate 类的映射文件" />
+		<echo message="schemaexportt     --> 运行SchemaExport,利用 hbm.xml 文件生成数据表" />
+		<echo message="clean			 --> 清除生成文件" />
+		<echo message="" />
+	</target>
+	
+	<!-- =================================================================== -->
+	<!-- 							Initialise                               -->
+	<!-- =================================================================== -->
+	<target name="init">
+		<tstamp>
+			<format property="TODAY" pattern="d-MM-yy" />
+		</tstamp>
+		<taskdef name="hibernatedoclet" classname="${hibernatedoclet}" classpathref="project.class.path" />
+	</target>
+
+	<!-- =================================================================== -->
+	<!-- 					 Invoke XDoclet's hibernate                      -->
+	<!-- =================================================================== -->
+	<target name="generate-hbm" depends="init">
+		<echo message="运行hibernatedoclet，通过pojo生成hbm.xml文件" />
+		<echo>+---------------------------------------------------+</echo>
+		<echo>|                                                   |</echo>
+		<echo>| R U N N I N G   H I B E R N A T E D O C L E T     |</echo>
+		<echo>|                                                   |</echo>
+		<echo>+---------------------------------------------------+</echo>
+		<delete dir="${generated.dir}" />
+		<mkdir dir="${generated.dir}" />
+
+		<hibernatedoclet destdir="${generated.dir}" excludedtags="@todo,@see" force="true" addedtags="@date at ${TODAY},@copyright jking,@author peter,@version ${version}" verbose="true" mergedir=".">
+			<fileset dir="${src.dir}">
+				<include name="**/entity/**/*.java" />
+			</fileset>
+
+			<hibernate version="3.0" />
+			<hibernatecfg version="3.0" destDir="${generated.dir}" driver="${jdbcDriver}" jdbcUrl="${jdbcUrl}" userName="${jdbcUser}" password="${jdbcPassword}" dialect="${jdbcDialect}" useOuterJoin="${jdbcUseOuterJoin}" showSql="${jdbcShowSql}" transactionManagerFactory="${transactionManagerFactory}" hbm2ddl="create">
+				<otherProperty name="query.substitutions" value="true 1, false 0" />
+			</hibernatecfg>
+		</hibernatedoclet>
+	</target>
+
+
+	<!-- ************************************************************** -->
+	<!-- 						SchemaExport 任务 						-->
+	<!-- ************************************************************** -->
+	<target name="schemaexport" depends="generate-hbm">
+		<echo message="运行SchemaExport,利用 hbm.xml 文件生成数据表" />
+		<taskdef name="schemaexport" classname="${schemaexport}" classpathref="project.class.path">
+		</taskdef>
+		<schemaexport config="${generated.dir}/hibernate.cfg.xml" quiet="no" text="no" drop="no" output="schema-export.sql">
+		</schemaexport>
+	</target>
+
+
+	<!-- =================================================================== -->
+	<!-- 							Clean                                    -->
+	<!-- =================================================================== -->
+	<target name="clean">
+		<echo message="清除生成的映射文件和类文件" />
+		<delete dir="${generated.dir}" />
+		<delete dir="${build.dir}" />
+	</target>
+</project>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

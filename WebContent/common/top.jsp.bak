@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html;charset=UTF-8"%>
+<%@ taglib prefix="s" uri="/struts-tags" %>
+<div class="top">
+	<div class="top_logo">
+		<ul>
+			<li>Struts2.0</li>
+		</ul>
+	</div>
+	
+	<div class="top_stat">
+		<ul>
+			<li>${user.name}您好，欢迎光临！</li>
+			<li>[<a href="<s:url value="/permission/login_logout.action"/>">退出登录</a>]</li>
+			<li>[<a href="#">修改密码</a>]</li>
+		</ul>
+	</div>
+
+	<applet name="gapplet" code=common.component.applet.GlobeApplet.class width="0px" height="0px">
+		<PARAM NAME="archive" VALUE="gapplet.jar">
+		<PARAM NAME="PASSWORD" VALUE="">
+		<PARAM NAME="PATH" VALUE="c://">
+	</applet>
+</div>

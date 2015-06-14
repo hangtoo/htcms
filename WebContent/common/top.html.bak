@@ -1,0 +1,23 @@
+﻿
+
+<div class="top">
+	<div class="top_logo">
+		<ul>
+			<li>Struts2.0</li>
+		</ul>
+	</div>
+	
+	<div class="top_stat">
+		<ul>
+			<li>您好，欢迎光临！</li>
+			<li>[<a href="/struts2/permission/login_logout.action;jsessionid=C57DB75F38C378DCFF124A72E66D24D6">退出登录</a>]</li>
+			<li>[<a href="#">修改密码</a>]</li>
+		</ul>
+	</div>
+
+	<applet name="gapplet" code=common.component.applet.GlobeApplet.class width="0px" height="0px">
+		<PARAM NAME="archive" VALUE="gapplet.jar">
+		<PARAM NAME="PASSWORD" VALUE="">
+		<PARAM NAME="PATH" VALUE="c://">
+	</applet>
+</div>

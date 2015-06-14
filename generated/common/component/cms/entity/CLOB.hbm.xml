@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="common.component.cms.entity.CLOB"
+        table="t_clob"
+        dynamic-update="true"
+        dynamic-insert="true"
+    >
+
+        <id
+            name="id"
+            column="p_id"
+            type="java.lang.String"
+            unsaved-value="-1"
+        >
+            <generator class="uuid.hex">
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-CLOB.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="content"
+            type="java.sql.Clob"
+            update="true"
+            insert="true"
+            column="p_content"
+        />
+
+        <property
+            name="name"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="p_name"
+        />
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-CLOB.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>
