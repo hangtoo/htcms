@@ -1,9 +1,11 @@
 package common.component.applet.httpclient;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 import org.apache.commons.httpclient.DefaultHttpMethodRetryHandler;
-import org.apache.commons.httpclient.Header;
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.HttpException;
 import org.apache.commons.httpclient.HttpStatus;
@@ -23,7 +25,7 @@ public class HttpPostGet {
 		return getData(uri);
 	}
 	
-	public String getData(String url) {
+	public String getData(String url,String charset,boolean needline){
 		// 设置代理
 		// httpClient.getHostConfiguration().setProxy("10.8.22.1", 8080);
 		
@@ -56,7 +58,21 @@ public class HttpPostGet {
 					System.out.println("Header 内容：" + obj);
 				}*/
 				
-				return new String(getMethod.getResponseBody(),"UTF-8");
+				getMethod.getParams().setContentCharset(charset);
+				InputStream in = getMethod.getResponseBodyAsStream();
+				
+				BufferedReader br = new BufferedReader(new InputStreamReader(in,charset));
+				StringBuilder b = new StringBuilder();
+				
+				String line;
+				while((line=br.readLine())!=null) {
+					b.append(line);
+					if(needline){
+						b.append("\r\n");
+					}
+				}
+				
+				return b.toString();
 			}
 		} catch (HttpException e) {
 			e.printStackTrace();
@@ -66,6 +82,10 @@ public class HttpPostGet {
 			getMethod.releaseConnection();
 		}
 		return null;
+	}
+	
+	public String getData(String url) {
+		return getData(url,"UTF-8",true);
 	}
 	
 	public String postData(String url,NameValuePair[] data,String jsessionid) throws HttpException, IOException {
