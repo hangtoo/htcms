@@ -1,0 +1,17 @@
+<table  cellspacing='1'  width="100%"  align="center" ><tr><td align="left"><form method="post" AUTOCOMPLETE="off"  name="frmtab1">
+  
+     
+	  <table class="cls-search-table"  border="0" cellpadding="0" cellspacing="0" height="40" width="100%" >
+	  <tbody><tr><td width="6" align="left" valign="top" background="/szseWeb/common/images/search05.gif">
+	     <img src="/szseWeb/common/images/search01.gif" height="6" width="6"/></td>
+		 <td rowspan="3" ><table border='0' ><tr>
+  	
+  		<td width="2">&nbsp;</td>
+  		<td width="18"><div class="cls_search_class1"/></td>
+  		<td><span class="cls_search_class2">信息查询</span></td>
+  		<td width="1">&nbsp;</td>
+  		<td width="5"><div class="cls_search_class3"/></td>
+  	
+  <td align='left'>&nbsp;<input  type='text' name='txtQueryDate' value='****-**-**' id='idtxtQueryDate' title='格式:YYYY-MM-DD'   onkeypress="doReportInputboxClick(event,'1803','tab1')"  class='cls-datepicker' onblur="blurJD()" onclick="getcalendar(this,'yyyy-mm-dd',event)"  onFocus="this.select(); " /><input  type='text' name='txtIgnore' style='display:none'>&nbsp;&nbsp;<input type="button" id="1803_tab1_btn" name="reportsubmit" value="" class="cls_search_button" onclick="return submit1803tab1('/szseWeb/FrontController.szse?ACTIONID=7&AJAX=AJAX-TRUE&CATALOGID=1803&TABKEY=tab1&txtQueryDate=&#039;+document.frmtab1.txtQueryDate.value+&#039;&REPORT_ACTION=search')"/></td></tr></table></td>
+		 <td width="6" align="right" valign="top" background="/szseWeb/common/images/search06.gif"><img src="/szseWeb/common/images/search03.gif" height="6" width="6"/></td></tr><tr><td background="/szseWeb/common/images/search05.gif"></td><td background="/szseWeb/common/images/search06.gif"></td></tr><tr><td width="6" align="left" valign="bottom" background="/szseWeb/common/images/search05.gif"><img src="/szseWeb/common/images/search02.gif" height="6" width="6"/></td><td width="6" align="right" valign="bottom" background="/szseWeb/common/images/search06.gif"><img src="/szseWeb/common/images/search04.gif" height="6" width="6"/></td></tr></tbody></table>
+     

@@ -16,7 +16,8 @@
 			classpath:common/component/upload/spring.xml,
 			classpath:common/component/ectable/spring.xml,
 			classpath:common/component/application/nurl/spring.xml,
-			classpath:common/component/application/user/spring.xml
+			classpath:common/component/application/user/spring.xml,
+			classpath:common/component/application/share/spring.xml
 		</param-value>
 	</context-param>
 

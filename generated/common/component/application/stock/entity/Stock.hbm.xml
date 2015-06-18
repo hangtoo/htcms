@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="common.component.application.share.entity.Stock"
+        table="t_stock"
+        dynamic-update="true"
+        dynamic-insert="true"
+    >
+
+        <id
+            name="id"
+            column="p_id"
+            type="java.lang.Integer"
+            unsaved-value="-1"
+        >
+            <generator class="identity">
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Nurl.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="name"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="p_name"
+        />
+ 
+        <property
+            name="data"
+            type="java.math.BigDecimal"
+            update="true"
+            insert="true"
+            column="p_data"
+        />
+
+        <property
+            name="date"
+            type="java.sql.Timestamp"
+            update="true"
+            insert="true"
+            column="p_date"
+        />
+ 
+        <property
+            name="add"
+            type="java.math.BigDecimal"
+            update="true"
+            insert="true"
+            column="p_add"
+        />
+        
+        <property
+            name="rate"
+            type="float"
+            update="true"
+            insert="true"
+            column="p_rate"
+        />
+ 
+        <property
+            name="highdata"
+            type="java.math.BigDecimal"
+            update="true"
+            insert="true"
+            column="p_highdata"
+        />
+
+        <property
+            name="highdate"
+            type="java.sql.Timestamp"
+            update="true"
+            insert="true"
+            column="p_highdate"
+        />
+
+        <property
+            name="createTime"
+            type="java.sql.Timestamp"
+            update="false"
+            insert="true"
+            column="p_createTime"
+        />
+
+        <property
+            name="modifyTime"
+            type="java.sql.Timestamp"
+            update="true"
+            insert="false"
+            column="p_modifyTime"
+        />
+
+        <property
+            name="creator"
+            type="string"
+            update="false"
+            insert="true"
+            column="p_creator"
+        />
+
+        <property
+            name="modifier"
+            type="string"
+            update="true"
+            insert="false"
+            column="p_modifier"
+        />
+
+        <property
+            name="remark"
+            type="string"
+            update="true"
+            insert="true"
+            column="p_remark"
+        />
+
+        <property
+            name="deleted"
+            type="java.lang.Boolean"
+            update="true"
+            insert="false"
+            column="p_deleted"
+        />
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Nurl.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>
