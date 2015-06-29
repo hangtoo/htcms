@@ -3,6 +3,9 @@ package common.component.application.share.service.impl;
 import java.io.Serializable;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import common.component.application.share.dao.StockDao;
 import common.component.application.share.entity.Stock;
 import common.component.application.share.service.StockService;
@@ -14,7 +17,9 @@ import common.exception.ExistException;
  *
  * �û�����ӿ�股票模块，股票登陆验证、股票增删改查�û���½��֤���û���ɾ�Ĳ�ȹ���
  */
+@Service("stockService")
 public class StockServiceImpl extends EcTableServiceImpl implements StockService{
+	@Autowired
 	private StockDao stockDao;
 
 	public StockServiceImpl(StockDao stockDao,EcTableDAOJdbc ecTableDAO) {

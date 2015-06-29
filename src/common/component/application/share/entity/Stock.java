@@ -5,10 +5,6 @@ import java.util.Date;
 
 import common.base.entity.Entity;
 
-/**
- * @author Administrator
- * @hibernate.class table="t_stock" dynamic-update="true" dynamic-insert="true"
- */
 public class Stock extends Entity {
 	
 	private static final long serialVersionUID = 9L;
@@ -24,8 +20,8 @@ public class Stock extends Entity {
     //无需持久化字段
 
 	/**
-	 * @return the name
-	 * @hibernate.property column = "p_name"
+	 * @return Returns the name.
+	 * @hibernate.property column="p_name" length="64"
 	 */
 	public String getName() {
 		return name;
@@ -39,8 +35,8 @@ public class Stock extends Entity {
 	}
 	
 	/**
-	 * @return the data
-	 * @hibernate.property column = "p_data"
+	 * @return Returns the name.
+	 * @hibernate.property column="p_data" length="64"
 	 */
 	public BigDecimal getData() {
 		return data;
@@ -51,8 +47,8 @@ public class Stock extends Entity {
 	}
 	
 	/**
-	 * @return the date
-	 * @hibernate.property column = "p_date"
+	 * @return Returns the name.
+	 * @hibernate.property column="p_date" length="64"
 	 */
 	public Date getDate() {
 		return date;
@@ -63,8 +59,8 @@ public class Stock extends Entity {
 	}
 	
 	/**
-	 * @return the add
-	 * @hibernate.property column = "p_add"
+	 * @return Returns the name.
+	 * @hibernate.property column="p_add" length="64"
 	 */
 	public BigDecimal getAdd() {
 		return add;
@@ -75,8 +71,8 @@ public class Stock extends Entity {
 	}
 	
 	/**
-	 * @return the rate
-	 * @hibernate.property column = "p_rate"
+	 * @return Returns the name.
+	 * @hibernate.property column="p_rate" length="64"
 	 */
 	public float getRate() {
 		return rate;
@@ -87,8 +83,8 @@ public class Stock extends Entity {
 	}
 	
 	/**
-	 * @return the highdata
-	 * @hibernate.property column = "p_highdata"
+	 * @return Returns the name.
+	 * @hibernate.property column="p_highdata" length="64"
 	 */
 	public BigDecimal getHighdata() {
 		return highdata;
@@ -99,8 +95,8 @@ public class Stock extends Entity {
 	}
 
 	/**
-	 * @return the highdate
-	 * @hibernate.property column = "p_highdate"
+	 * @return Returns the name.
+	 * @hibernate.property column="p_highdate" length="64"
 	 */
 	public Date getHighdate() {
 		return highdate;

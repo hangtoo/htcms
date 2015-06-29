@@ -16,13 +16,13 @@
         <id
             name="id"
             column="p_id"
-            type="java.lang.Integer"
+            type="java.lang.String"
             unsaved-value="-1"
         >
-            <generator class="identity">
+            <generator class="uuid.hex">
               <!--  
                   To add non XDoclet generator parameters, create a file named 
-                  hibernate-generator-params-Nurl.xml 
+                  hibernate-generator-params-Admin.xml 
                   containing the additional parameters and place it in your merge dir. 
               --> 
             </generator>

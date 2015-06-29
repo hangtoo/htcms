@@ -133,6 +133,21 @@ public class DateUtil {
 		return date;
 	}
 	
+	/**
+	 * 将字符串转化为date对象
+	 * @param dateString 时间字符串
+	 * @return date对象
+	 */
+	public static Date convertShortStringToDate(String dateString) {
+		Date date = null;
+		try {
+			date = shotDateFormat.parse(dateString);
+		} catch (Exception e) {
+			date = null;
+		}
+		return date;
+	}
+	
 	 /**
      * 获得短日期格式
      * @param date
@@ -193,4 +208,38 @@ public class DateUtil {
      {	
 	    return fullDateFormat.format(new java.util.Date());	
      } 
+     
+     //1~7分别表示周一到周日
+ 	public static int getWeekday(Date date){
+        Calendar gc = Calendar.getInstance();
+        gc.setTime(date);
+        int week=gc.get(Calendar.DAY_OF_WEEK);//"","星期日","星期一","星期二","星期三","星期四","星期五","星期六"
+        week--;
+		if(week==0){
+			week=7;
+		}
+		
+		return week;
+	}
+ 	
+    /**
+     * 日期加N天
+     * @param Sring 时间
+     * @return 加后的日期
+     */
+	public static Date addDay(Date date, int m, int d) {
+		try {
+			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+
+			Calendar cd = Calendar.getInstance();
+			cd.setTime(date);
+			cd.add(Calendar.DATE, d);// 添加一天
+			cd.add(Calendar.MONTH, m);//添加一个月
+
+			return cd.getTime();
+
+		} catch (Exception e) {
+			return null;
+		}
+	}
 }

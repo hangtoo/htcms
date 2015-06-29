@@ -1,10 +1,13 @@
 package common.component.application.share.action;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import common.base.action.BaseAction;
 import common.component.IConstants;
 import common.component.application.share.entity.Stock;
 import common.component.application.share.service.StockService;
 import common.exception.ExistException;
+
 
 public class StockAction extends BaseAction{
 
@@ -22,7 +25,7 @@ public class StockAction extends BaseAction{
 	
 	public String newOne() {
 		parameters.put(IConstants.RETURNMSG,getText(IConstants.CREATESUCCESS));
-		return SUCCESS;
+		return "newOne";
 	}
 	
 	public String edit() throws Exception {
@@ -32,7 +35,7 @@ public class StockAction extends BaseAction{
 		} else {
 			parameters.put(IConstants.RETURNMSG,getText(IConstants.UPDATEERROR));
 		}
-		return SUCCESS;
+		return "edit";
 	}
 	
 	public String save(){
@@ -44,7 +47,7 @@ public class StockAction extends BaseAction{
 			parameters.put(IConstants.RETURNMSG,getText(IConstants.CREATEDBERROR));
 		}
 
-		return SUCCESS;
+		return "search";
 	}
 	
 	public String delete(){
@@ -54,7 +57,7 @@ public class StockAction extends BaseAction{
 		} else {
 			parameters.put(IConstants.RETURNMSG,getText(IConstants.DELETEDBERROR));
 		}
-		return SUCCESS;
+		return "search";
 	}
 
 	public String update(){
@@ -64,12 +67,12 @@ public class StockAction extends BaseAction{
 		} else {
 			parameters.put(IConstants.RETURNMSG,getText(IConstants.UPDATEDBERROR));
 		}
-		return SUCCESS;
+		return "search";
 	}
 	
 	public String search() throws Exception {
 		super.search(stockService,"select t.* from t_stock t where 1=1 and t.p_deleted is null ");
-		return SUCCESS;
+		return "search";
 	}
 	
 	public Stock getBean() {
@@ -83,7 +86,7 @@ public class StockAction extends BaseAction{
 	public StockService getStockService() {
 		return stockService;
 	}
-
+	@Autowired
 	public void setStockService(StockService stockService) {
 		this.stockService = stockService;
 	}
