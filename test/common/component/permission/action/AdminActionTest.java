@@ -5,8 +5,6 @@ import java.util.List;
 import org.junit.Test;
 
 import common.base.BaseStrutsTestCase;
-
-import common.component.permission.action.AdminAction;
 import common.component.permission.entity.Admin;
 import common.component.permission.entity.Role;
 import common.component.permission.service.AdminService;

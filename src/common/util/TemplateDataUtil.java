@@ -58,12 +58,20 @@ public class TemplateDataUtil {
         	
             char r;
             char t;
-            int s=-1,e=-1;
+            int s=-1,e=-1,oldri=-1,oldtj=-1;
             int tags=-1,tage=-1;
             String key=null,value=null;
             boolean getkey=false,getvalue=false;
             for (int ri=0,tj = 0; ri <= ret.length() - 1&&tj<=template.length() - 1; ) {  
             	//log.debug("ri="+ri+";tj="+tj+";");
+            	
+            	if(oldri==ri&&oldtj==tj){
+            		log.debug(ret.substring(0,ri));
+            		log.debug("==============华丽丽的分割线===============");
+            		log.debug(template.substring(0,tj));
+            		break;
+            	}
+            	
             	r = ret.charAt(ri);
             	t=template.charAt(tj);
             	

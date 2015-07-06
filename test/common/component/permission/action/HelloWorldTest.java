@@ -1,8 +1,6 @@
 package common.component.permission.action;
 
 import common.base.BaseStrutsTestCase;
-
-import common.component.permission.action.LoginAction;
 import common.component.permission.entity.Admin;
 
 public class HelloWorldTest extends BaseStrutsTestCase {

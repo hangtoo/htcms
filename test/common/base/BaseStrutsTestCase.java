@@ -33,9 +33,12 @@ public abstract class BaseStrutsTestCase extends TestCase {
 	private static final String CONFIG_LOCATIONS = "classpath:spring/applicationContext.xml"
 			+ ",classpath:common/component/permission/spring.xml"
 			+ ",classpath:common/component/cms/spring.xml"
+			+ ",classpath:common/component/config/spring.xml"
 			+ ",classpath:common/component/upload/spring.xml"
-			+ ",classpath:common/component/application/share/spring.xml"
-			+ ",classpath:common/component/ectable/spring.xml";
+			+ ",classpath:common/component/ectable/spring.xml"
+			+ ",classpath:common/component/application/nurl/spring.xml"
+			+ ",classpath:common/component/application/user/spring.xml"
+			+ ",classpath:common/component/application/share/spring.xml";
 	private static ApplicationContext applicationContext;
 	private Dispatcher dispatcher;
 	protected ActionProxy proxy;

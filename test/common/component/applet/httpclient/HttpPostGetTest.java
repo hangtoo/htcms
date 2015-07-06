@@ -19,7 +19,7 @@ public class HttpPostGetTest extends TestCase{
 		//String str=http.getData("http://localhost:8888/struts2/cms/http_newOne.action?bean.catalogue.id=11");
 		//System.out.println("newone "+str);
 		//str=http.getData("http://localhost:8888/struts2/cms/http_edit.action?bean.id=4028814621b310110121b316d2530001&bean.catalogue.id=11");
-		str=http.getData("http://www.szse.cn//szseWeb/FrontController.szse?ACTIONID=7&AJAX=AJAX-TRUE&CATALOGID=1803&TABKEY=tab1&txtQueryDate=2015-04-01&REPORT_ACTION=search","GB2312",true);
+		//str=http.getData("http://www.szse.cn//szseWeb/FrontController.szse?ACTIONID=7&AJAX=AJAX-TRUE&CATALOGID=1803&TABKEY=tab1&txtQueryDate=2015-04-01&REPORT_ACTION=search","GB2312",true);
 		System.out.println("edit "+str);
 		
 	}

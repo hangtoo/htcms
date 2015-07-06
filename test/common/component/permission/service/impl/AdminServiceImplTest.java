@@ -31,6 +31,7 @@ public class AdminServiceImplTest extends BaseStrutsTestCase{
 		Map session=new Hashtable();
 		session.put(IConstants.USER, bean);
 		ServletActionContext.getContext().setSession(session);
+//		servletContext.setAttribute(IConstants.USER, bean);
 		
 		RoleService roleservice=(RoleService)this.getInstance("roleService");
 		List<Role> roles=roleservice.getList();
