@@ -37,4 +37,9 @@ public class TemplateDataUtilTest {
 		}
 	}
 	
+	@Test
+	public void testSetFileTemplate(){
+		TemplateDataUtil.setFileTemplate("/common/util/template.txt");
+	}
+	
 }

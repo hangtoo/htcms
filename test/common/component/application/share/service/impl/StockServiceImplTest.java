@@ -159,13 +159,13 @@ public class StockServiceImplTest extends BaseStrutsTestCase{
 	public void testBatchSave(){
 		init();
 		
-		Date startdate=DateUtil.convertShortStringToDate("2015-07-06");
+		Date startdate=DateUtil.convertShortStringToDate("2015-07-09");
 		int week=0;
 		Date day=null;
 		Date beforeday;
 		
 		for(int i=0;i<1;i++){
-			for(int j=0;j<2;j++){
+			for(int j=0;j<8;j++){
 				
 				beforeday=day;
 				
