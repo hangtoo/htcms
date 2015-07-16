@@ -1,5 +1,6 @@
 package common.util;
 
+import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -7,6 +8,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URLEncoder;
 import java.util.UUID;
 
@@ -110,13 +112,32 @@ public class FileUtil {
 	 * 读取文件内容
 	 * @param strSourceFileName
 	 * @return
+	 * @throws IOException 
 	 */
 	public static String readFile(String strSourceFileName){
 		File fileSource = new File(strSourceFileName);
 		// 如果源文件不存或源文件是文件夹
 		if (!fileSource.exists() || !fileSource.isFile()) {
 			logger.debug("源文件[" + strSourceFileName + "],不存在或是文件夹!");
-			return null;
+			
+			InputStream inputStream = FileUtil.class.getResourceAsStream(strSourceFileName);
+			byte b[]=null;
+			try {
+				b = new byte[(int) inputStream.available()]; // 创建合适文件大小的数组
+				inputStream.read(b); // 读取文件中的内容到b[]数组
+				inputStream.close();
+				logger.debug("源文件[" + strSourceFileName + "],存在哦 !");
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} finally {
+				try {
+					inputStream.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+			return new String(b);
 		}
 		
 		StringBuffer s = new StringBuffer();
